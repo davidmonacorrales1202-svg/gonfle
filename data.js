@@ -153,9 +153,9 @@ const PRODUCTOS = [
   { id: "catering-empresarial", linea: "regalos", nombre: "Catering empresarial", img: "foto-catering.webp", ia: true, cubre: true,
     desc: "Desayunos, brunch, refrigerios, lunch, almuerzos y estaciones de alimentos para reuniones y eventos corporativos.",
     specs: { "Servicios": "Desayunos, brunch, refrigerios, lunch, almuerzos, estaciones", "Cantidad mínima": "Por confirmar", "Cobertura": "Por confirmar" } },
-  { id: "semana-salud", linea: "regalos", nombre: "Semana de la Salud y Bienestar", img: "foto-salud.webp", ia: true, cubre: true,
-    desc: "Refrigerios saludables, kits de bienestar y material de marca para jornadas internas.",
-    specs: { "Incluye": "Refrigerios saludables, desayunos y almuerzos, kits de bienestar, actividades", "Cantidad mínima": "Por confirmar" } },
+  { id: "proyectos-especiales", linea: "regalos", nombre: "Proyectos especiales y personalizados", img: "foto-salud.webp", ia: true, cubre: true,
+    desc: "Soluciones a la medida que combinan alimentación, regalos, publicidad e inflables en un solo proyecto.",
+    specs: { "Ejemplos": "Semana de la Salud y bienestar, Fin de año empresarial, Lanzamientos de producto, Bienvenida de colaboradores, Atención a clientes VIP", "Alcance": "Se define contigo en la cotización" } },
 ];
 
 const NECESIDADES = [
