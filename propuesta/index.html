@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta para Gonflé | Página web y kit de venta</title>
+<meta name="description" content="Propuesta comercial para Gonflé: recuperar su presencia en internet, nueva página web con cotización por WhatsApp y kit de venta.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2E1350">
+<link rel="icon" href="../assets/img/logo-gonfle-sin-slogan.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--rojo:#E51D3F;--amarillo:#F6A416;--morado:#552883;--osc:#2E1350;--tinta:#1E1630;--texto:#4A4458;--suave:#7B748A;--linea:#E8E3EE;--fondo:#FBFAFC;--wa:#1FAF5A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--texto);background:#fff;font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{color:var(--tinta);line-height:1.15;letter-spacing:-.025em;margin:0;text-wrap:balance}
+p{margin:0 0 14px}
+a{color:var(--morado)}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--amarillo);outline-offset:3px;border-radius:6px}
+
+.hero{background:var(--osc);color:#D8CEE8;padding:56px 0 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;width:380px;aspect-ratio:1;right:-120px;top:-140px;background:var(--amarillo);border-radius:46% 54% 60% 40%/52% 44% 56% 48%}
+.hero::before{content:"";position:absolute;width:220px;aspect-ratio:1;right:120px;bottom:-130px;background:var(--rojo);border-radius:54% 46% 40% 60%/46% 58% 42% 54%}
+.hero .wrap{position:relative;z-index:1}
+.hero img{height:46px;margin-bottom:44px}
+.eyebrow{font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amarillo);display:block;margin-bottom:14px}
+.hero h1{color:#fff;font-size:clamp(2rem,5vw,3.3rem);font-weight:800;max-width:720px}
+.hero p{font-size:1.12rem;max-width:620px;margin-top:20px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;font-size:.86rem;margin-top:26px;color:#B7A9CF}
+.meta b{color:#fff;font-weight:500}
+
+section{padding:68px 0}
+section.gris{background:var(--fondo)}
+.sec-e{font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo);display:block;margin-bottom:10px}
+h2{font-size:clamp(1.55rem,3.2vw,2.2rem);margin-bottom:16px}
+.lead{font-size:1.08rem;max-width:720px}
+.grid{display:grid;gap:18px;margin-top:30px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid var(--linea);border-radius:20px;padding:26px}
+.card h3{font-size:1.1rem;margin-bottom:10px}
+.card p:last-child,.card ul:last-child{margin-bottom:0}
+ul{margin:0 0 14px;padding-left:20px}
+li{margin-bottom:7px}
+blockquote{margin:0;padding:22px 24px;border-radius:18px;background:#fff;border:1px solid var(--linea);border-left:5px solid var(--amarillo);color:var(--tinta);font-size:1rem;font-style:italic}
+
+.alerta{margin-top:30px;border-radius:20px;padding:28px;background:#FFF3DB;color:#5C3B00;border:1px solid #F3D9A2}
+.alerta h3{color:#5C3B00;font-size:1.15rem;margin-bottom:10px}
+.alerta p:last-child{margin-bottom:0}
+
+.bloque{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:28px 0;border-bottom:1px solid var(--linea)}
+.bloque:last-child{border-bottom:0}
+.bloque .n{width:56px;height:56px;border-radius:18px;background:var(--morado);color:#fff;display:grid;place-items:center;font-weight:700;font-size:1.25rem}
+.bloque h3{font-size:1.22rem;margin-bottom:6px}
+.bloque .para{color:var(--suave);font-size:.95rem;margin-bottom:12px}
+.checks{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 26px}
+.checks li{position:relative;padding-left:28px;margin:0;font-size:.96rem}
+.checks li::before{content:"";position:absolute;left:0;top:.42em;width:16px;height:9px;border-left:3px solid var(--wa);border-bottom:3px solid var(--wa);transform:rotate(-45deg) scale(.8);transform-origin:left}
+
+.demo{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:10px}
+.demo figure{margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--linea);box-shadow:0 18px 44px rgba(46,19,80,.14)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-rojo{background:var(--rojo);color:#fff;box-shadow:0 8px 22px rgba(229,29,63,.3)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 22px rgba(31,175,90,.3)}
+.btn-linea{border-color:rgba(255,255,255,.4);color:#fff}
+
+.precio{background:var(--osc);color:#D8CEE8;border-radius:28px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:30px}
+.precio .valor{font-size:clamp(2.6rem,7vw,4rem);font-weight:800;color:#fff;letter-spacing:-.04em;line-height:1}
+.precio .valor small{font-size:1rem;font-weight:500;color:#B7A9CF;letter-spacing:0;margin-left:6px}
+.precio h3{color:#fff;font-size:1.05rem;margin-bottom:12px}
+.precio .pagos{display:grid;gap:10px;margin-top:22px}
+.precio .pago{display:flex;justify-content:space-between;gap:16px;padding:14px 18px;border-radius:14px;background:rgba(255,255,255,.08);font-size:.95rem}
+.precio .pago b{color:#fff;white-space:nowrap}
+.precio ul{margin:0;padding-left:18px;font-size:.95rem}
+.no-incl li{color:var(--texto)}
+
+.linea-t{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.sem{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:22px}
+.sem span{display:block;font-size:.74rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rojo);margin-bottom:8px}
+.sem b{display:block;color:var(--tinta);font-size:1.02rem;margin-bottom:6px;line-height:1.3}
+.sem p{font-size:.9rem;margin:0}
+
+.cierre{background:var(--rojo);color:#FFE4E9;text-align:center;padding:72px 0}
+.cierre h2{color:#fff;font-size:clamp(1.7rem,4vw,2.5rem)}
+.cierre p{max-width:560px;margin:14px auto 28px;font-size:1.05rem}
+.cierre .acc{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cierre .btn-wa{background:#fff;color:var(--tinta);box-shadow:none}
+footer{padding:28px 0;font-size:.84rem;color:var(--suave);text-align:center}
+
+@media (max-width:820px){
+  .g2,.g3,.demo,.precio{grid-template-columns:1fr}
+  .linea-t{grid-template-columns:1fr 1fr}
+  .checks{grid-template-columns:1fr}
+  .precio{padding:30px 24px;gap:28px}
+  section{padding:52px 0}
+}
+@media (max-width:520px){
+  .bloque{grid-template-columns:1fr;gap:12px}
+  .linea-t{grid-template-columns:1fr}
+  .hero::after{width:240px;right:-110px;top:-110px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media print{.hero::after,.hero::before{display:none}section{padding:28px 0}.card,.bloque,.precio,.sem{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img src="../assets/img/logo-gonfle-blanco.png" alt="Gonflé. Sentimos tu marca">
+    <span class="eyebrow">Propuesta comercial</span>
+    <h1>Que Gonflé vuelva a estar en internet y sea fácil pedirle una cotización</h1>
+    <p>María Adelaida: aquí está, en simple, lo que propongo hacer, cuánto cuesta y en cuánto tiempo queda listo.</p>
+    <div class="meta">
+      <span>Para: <b>María Adelaida Jiménez Grajales, Gonflé S.A.S.</b></span>
+      <span>De: <b>David Mona Corrales</b></span>
+      <span>Fecha: <b>7 de octubre de 2026</b></span>
+      <span>Válida hasta: <b>22 de octubre de 2026</b></span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <span class="sec-e">Lo que entendí de nuestra reunión</span>
+    <h2>Usted quiere trabajar simple</h2>
+    <p class="lead">Revisé la reunión, los catálogos, el manual de marca, el brochure y los flyers. Esto es lo que me quedó claro.</p>
+    <div class="grid g2">
+      <blockquote>"Si yo le mando los catálogos, usted dice: pero esta señora ¿qué vende?"</blockquote>
+      <blockquote>"La gente entra y dice: bueno, ¿y ahora cómo compro?"</blockquote>
+    </div>
+    <div class="grid g3">
+      <div class="card"><h3>Sus clientes son empresas</h3><p>Les gusta que los atiendan. No compran en una página: piden que les manden la cotización.</p></div>
+      <div class="card"><h3>El material es de 2022</h3><p>Catálogos, brochure y página dicen 2022, y hoy no tiene qué mostrar en una cita.</p></div>
+      <div class="card"><h3>Está empezando de cero</h3><p>La página fue hackeada y el equipo que manejaba lo digital ya no está.</p></div>
+    </div>
+
+    <div class="alerta">
+      <h3>Algo que encontré y que hay que resolver primero</h3>
+      <p>La dirección <b>gonfle.com.co</b> hoy muestra un aviso de "dominio en venta" y no recibe correos. Esa dirección y el correo gerencia@gonfle.com.co aparecen en sus catálogos, tarjetas, flyers e Instagram.</p>
+      <p>Lo primero que haré es averiguar si se puede recuperar a un precio razonable. Si no, usamos <b>gonflegroup.com</b>, que ya es suyo, y actualizamos todo el material.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <span class="sec-e">Lo que vamos a hacer</span>
+    <h2>Cuatro entregas, en orden</h2>
+    <p class="lead">Todo con los colores y el logo de su manual de marca. Nada de eso cambia.</p>
+
+    <div style="margin-top:14px">
+      <div class="bloque">
+        <div class="n">1</div>
+        <div>
+          <h3>Recuperar su presencia</h3>
+          <p class="para">Para que sus enlaces y correos vuelvan a funcionar y no se repita lo del hackeo.</p>
+          <ul class="checks">
+            <li>Gestión del dominio y del correo</li>
+            <li>Contraseñas nuevas y doble verificación</li>
+            <li>WhatsApp Business configurado: perfil, catálogo, respuestas rápidas y etiquetas</li>
+            <li>Instagram corregido: descripción y enlace</li>
+            <li>Perfil de Gonflé en Google</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bloque">
+        <div class="n">2</div>
+        <div>
+          <h3>Su nueva página web</h3>
+          <p class="para">Un catálogo claro donde el cliente arma su pedido y le llega a usted por WhatsApp, ya ordenado.</p>
+          <ul class="checks">
+            <li>Cinco líneas: inflables, material POP, merchandising, textil, regalos y catering</li>
+            <li>Hasta 50 productos con ficha: material, medidas y área de marcación</li>
+            <li>Lista de cotización que se envía por WhatsApp o correo</li>
+            <li>Un enlace propio por producto, para compartir</li>
+            <li>Se ve bien en celular</li>
+            <li>Página "Cómo trabajamos" con sus condiciones</li>
+            <li>Política de datos y actualización de datos de clientes y proveedores</li>
+            <li>Medición de cuántas personas piden cotización</li>
+            <li>Sin base de datos expuesta, para reducir el riesgo de hackeo</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bloque">
+        <div class="n">3</div>
+        <div>
+          <h3>Su kit de venta</h3>
+          <p class="para">Para que tenga qué mostrar y qué enviar cuando un cliente pregunte "¿qué me va a entregar?".</p>
+          <ul class="checks">
+            <li>Portafolio en PDF de 8 a 10 páginas, sin año en la portada</li>
+            <li>Un flyer por cada línea, listo para WhatsApp</li>
+            <li>Código QR hacia la página</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bloque">
+        <div class="n">4</div>
+        <div>
+          <h3>Entrega y acompañamiento</h3>
+          <p class="para">Usted no tiene que aprender tecnología.</p>
+          <ul class="checks">
+            <li>Una sesión de una hora para mostrarle cómo usar todo</li>
+            <li>Dos rondas de ajustes incluidas</li>
+            <li>30 días de soporte después de publicar</li>
+            <li>Guía corta de por dónde seguir: WhatsApp, Instagram, LinkedIn y pauta</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="sec-e">Ya puede probarla</span>
+    <h2>Preparé una versión de prueba de su página</h2>
+    <div class="demo">
+      <div>
+        <p class="lead">Entre desde el celular o el computador, mire el catálogo, agregue productos y envíese una cotización de prueba por WhatsApp.</p>
+        <p>Las fotos marcadas como "de referencia" salen de su catálogo 2022 y se cambian por fotos reales de sus trabajos. Lo que diga "Por confirmar" lo definimos juntos.</p>
+        <p style="margin-top:22px"><a class="btn btn-rojo" href="../">Abrir la página de prueba</a></p>
+      </div>
+      <figure><a href="../"><img src="../assets/img/proto-inicio.webp" alt="Vista de la página de prueba de Gonflé"></a></figure>
+    </div>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <span class="sec-e">Inversión</span>
+    <h2>Un solo valor por todo lo anterior</h2>
+    <div class="precio">
+      <div>
+        <div class="valor">$1.500.000<small>COP</small></div>
+        <div class="pagos">
+          <div class="pago"><span>Para iniciar</span><b>$750.000</b></div>
+          <div class="pago"><span>Al publicar la página</span><b>$750.000</b></div>
+        </div>
+      </div>
+      <div>
+        <h3>Incluye</h3>
+        <ul>
+          <li>Recuperación de dominio, correo y seguridad</li>
+          <li>WhatsApp Business, Instagram y perfil en Google</li>
+          <li>Página web con hasta 50 productos</li>
+          <li>Portafolio PDF y un flyer por línea</li>
+          <li>Capacitación, dos rondas de ajustes y 30 días de soporte</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid g2">
+      <div class="card no-incl">
+        <h3>No incluye</h3>
+        <ul>
+          <li><b>Fotografía de productos.</b> Puede usar la cotización que ya tiene ($700.000 por 30 a 50 productos). Es lo que más recomiendo sumar.</li>
+          <li><b>Costo anual del dominio y del alojamiento.</b> Se pagan directamente al proveedor y quedan a nombre de Gonflé.</li>
+          <li><b>Publicidad paga</b> en Google o Instagram.</li>
+          <li><b>Manejo mensual de redes.</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Después, si usted quiere</h3>
+        <p>Cuando la página esté publicada puedo seguir a cargo de su mantenimiento: cambios de productos, fotos y textos, copias de seguridad y soporte por WhatsApp.</p>
+        <p><b>$100.000 al mes.</b> Es opcional y se decide más adelante.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="sec-e">Tiempos</span>
+    <h2>Publicada en cuatro semanas</h2>
+    <p class="lead">Contadas desde el pago inicial y la entrega de la información. Así alcanza a usarla en la temporada de fin de año.</p>
+    <div class="linea-t">
+      <div class="sem"><span>Semana 1</span><b>Recuperar</b><p>Dominio, correo, seguridad, WhatsApp Business, Instagram y Google.</p></div>
+      <div class="sem"><span>Semana 2</span><b>Definir y cargar</b><p>Reunión para cerrar líneas y productos. Carga del catálogo.</p></div>
+      <div class="sem"><span>Semana 3</span><b>Revisar</b><p>Usted prueba la página y pide ajustes. Portafolio y flyers.</p></div>
+      <div class="sem"><span>Semana 4</span><b>Publicar</b><p>Página al aire, capacitación y entrega del kit de venta.</p></div>
+    </div>
+
+    <div class="grid g2" style="margin-top:44px">
+      <div class="card">
+        <h3>Lo que necesito de usted</h3>
+        <ul>
+          <li>Una reunión de dos horas para definir productos, cantidades mínimas y tiempos de entrega.</li>
+          <li>Fotos de trabajos entregados, aunque sean de celular.</li>
+          <li>Nombres de clientes que autoricen aparecer en la página.</li>
+          <li>NIT, dirección, horario y el texto de su política de datos.</li>
+          <li>Acceso a las cuentas de Instagram, Facebook y del dominio.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Cómo trabajo</h3>
+        <ul>
+          <li>Yo propongo y usted decide. Le digo con franqueza lo que creo que funciona y lo que no.</li>
+          <li>Un solo canal: WhatsApp, con un resumen escrito después de cada reunión.</li>
+          <li>Todo queda a nombre de Gonflé: dominio, cuentas, página y archivos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cierre">
+  <div class="wrap">
+    <h2>¿Empezamos?</h2>
+    <p>Si está de acuerdo, escríbame y esta misma semana comienzo con el dominio y el correo.</p>
+    <div class="acc">
+      <a class="btn btn-wa" id="aceptar" href="#" target="_blank" rel="noopener">Aceptar por WhatsApp</a>
+      <a class="btn btn-linea" href="../">Ver la página de prueba</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">Propuesta preparada por David Mona Corrales para Gonflé S.A.S. · Válida hasta el 22 de octubre de 2026</div></footer>
+
+<script>
+// Número de WhatsApp de David en formato internacional, sin "+" (ej.: "573001234567").
+// Si queda vacío, WhatsApp abre y ella elige el chat.
+const WHATSAPP_DAVID = "";
+const texto = "Hola David, revisé la propuesta para Gonflé y quiero que empecemos.";
+document.getElementById("aceptar").href = "https://wa.me/" + WHATSAPP_DAVID + "?text=" + encodeURIComponent(texto);
+</script>
+</body>
+</html>
