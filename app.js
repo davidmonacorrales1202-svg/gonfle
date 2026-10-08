@@ -407,8 +407,8 @@ function ruta() {
   app.innerHTML = html;
   document.title = titulo;
   $$(".nav a").forEach((x) => { const on = x.dataset.nav === nav; x.classList.toggle("activo", on); on ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current"); });
-  $("#nav").classList.remove("abierto"); $("#burger").setAttribute("aria-expanded", "false");
-  window.scrollTo(0, 0);
+  menu(false);
+  window.scrollTo({ top: 0, behavior: "instant" });
   if (primera) primera = false; else app.focus({ preventScroll: true });
 
   if (a === "catalogo") {
@@ -431,6 +431,18 @@ function revelar() {
   $$(".rev:not(.in)").forEach((e) => obs.observe(e));
 }
 
+// ───────── Menú móvil
+function menu(abrir) {
+  $("#nav").classList.toggle("abierto", abrir);
+  $("#velo").classList.toggle("ver", abrir);
+  document.body.classList.toggle("menu-abierto", abrir);
+  const b = $("#burger");
+  b.setAttribute("aria-expanded", abrir);
+  b.setAttribute("aria-label", abrir ? "Cerrar menú" : "Abrir menú");
+}
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && $("#nav").classList.contains("abierto")) { menu(false); $("#burger").focus(); } });
+matchMedia("(min-width: 901px)").addEventListener("change", (m) => { if (m.matches) menu(false); });
+
 // ───────── Eventos globales
 document.addEventListener("click", (e) => {
   const w = e.target.closest('a[href^="https://wa.me/"]');
@@ -440,7 +452,8 @@ document.addEventListener("click", (e) => {
   const q = e.target.closest("[data-quitar]");
   if (q) { cot.quitar(q.dataset.quitar); pintarCot(); return; }
   if (e.target.closest("#porCorreo")) { enviar("correo"); return; }
-  if (e.target.closest("#burger")) { const ab = $("#nav").classList.toggle("abierto"); $("#burger").setAttribute("aria-expanded", ab); }
+  if (e.target.closest("#burger")) { menu(!$("#nav").classList.contains("abierto")); return; }
+  if (e.target.closest("#velo") || e.target.closest("#nav a")) menu(false);
 });
 document.addEventListener("input", (e) => {
   const id = e.target.dataset && e.target.dataset.cantId;
