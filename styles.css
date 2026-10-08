@@ -1,7 +1,7 @@
-/* Gonflé — prototipo web. Colores y tipografía según Manual de marca (E51D3F / F6A416 / 552883, Poppins). */
+/* Gonflé — prototipo web. Colores del logo oficial (EB0045 / FEE123 / 510C76), Poppins. */
 :root{
-  --rojo:#E51D3F; --rojo-osc:#C0142F;
-  --amarillo:#F6A416; --amarillo-claro:#FFF3DB;
+  --rojo:#EB0045; --rojo-osc:#C4003A;
+  --amarillo:#FEE123; --amarillo-claro:#FFF9D6;
   --morado:#552883; --morado-osc:#2E1350; --morado-claro:#F3EEF9;
   --tinta:#1E1630; --texto:#4A4458; --suave:#7B748A;
   --linea:#E8E3EE; --fondo:#FBFAFC; --blanco:#fff;
@@ -34,7 +34,7 @@ p{margin:0}
 .btn:hover{transform:translateY(-1px)}
 .btn:active{transform:translateY(0)}
 .btn svg{width:19px;height:19px;flex:none}
-.btn-rojo{background:var(--rojo);color:#fff;box-shadow:0 6px 18px rgba(229,29,63,.28)}
+.btn-rojo{background:var(--rojo);color:#fff;box-shadow:0 6px 18px rgba(235,0,69,.28)}
 .btn-rojo:hover{background:var(--rojo-osc)}
 .btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 18px rgba(31,175,90,.28)}
 .btn-wa:hover{background:var(--wa-osc)}
@@ -393,7 +393,7 @@ p{margin:0}
 
 /* ───────── Ajuste de marca (oct 2026): blanco, rojo y amarillo; diseño editorial sin tarjetas genéricas ───────── */
 :root{
-  --morado:#C0142F; --morado-osc:#E51D3F; --morado-claro:#FFF3DB;
+  --morado:#C4003A; --morado-osc:#EB0045; --morado-claro:#FFF9D6;
   --tinta:#1D1A1E; --texto:#4A4548; --suave:#7A7377;
   --linea:#E8E3DF; --fondo:#FAF8F5;
   --r-s:6px; --r-m:6px; --r-l:6px;
