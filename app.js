@@ -60,7 +60,7 @@ function mensajeCotizacion(d) {
 // ───────── Piezas reutilizables
 function imagen(p, clase = "", lazy = true) {
   if (p.sinFoto) return `<div class="prod-pend">${ico("foto")}<span>Foto real pendiente</span></div>`;
-  const tag = p.ia ? "Imagen ilustrativa (IA)" : p.ref ? "Imagen de referencia" : "";
+  const tag = p.ia ? "" : p.ref ? "Imagen de referencia" : "";
   return `<img class="${p.cubre ? "cubre" : ""} ${clase}" src="${IMG}${p.img}" alt="${esc(p.nombre)}" ${lazy ? `loading="lazy" decoding="async"` : ""}>${tag ? `<span class="ref">${tag}</span>` : ""}`;
 }
 
@@ -117,7 +117,7 @@ function vInicio() {
   <section class="hero">
     <div class="wrap">
       <div>
-        <span class="eyebrow">Publicidad para empresas · Medellín</span>
+        
         <h1>Hacemos que tu marca <em>se vea, se toque y se recuerde.</em></h1>
         <p class="lead">Diseñamos y producimos inflables publicitarios, material POP, merchandising y dotaciones personalizadas. Tú nos cuentas la idea; nosotros te acompañamos hasta la entrega.</p>
         <div class="hero-ctas">
@@ -130,17 +130,14 @@ function vInicio() {
           <div><b>100 %</b><span>personalizado</span></div>
         </div>
       </div>
-      <div class="hero-arte">
-        <div class="hero-blob"><img src="${IMG}hero-pantera.webp" alt="Inflable publicitario gigante con forma de pantera"><span class="ref">Imagen de referencia</span></div>
-        <div class="hero-tag"><b>Inflables a la medida</b>La forma que imagines, con el arte de tu marca.</div>
-        <div class="hero-tag hero-tag2"><b>Todo con tu logo</b>No vendemos producto genérico.</div>
+      <div class="hero-foto"><img src="${IMG}foto-evento.webp" alt="Evento corporativo con arco inflable, regalos y refrigerios de Gonflé"></div>
       </div>
     </div>
   </section>
 
   <section class="sec">
     <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">Empieza por aquí</span><h2>¿Qué necesitas resolver?</h2><p>Elige la situación y te mostramos lo que suele funcionar.</p></div>
+      <div class="sec-head"><h2>¿Qué necesitas resolver?</h2><p>Elige la situación y te mostramos lo que suele funcionar.</p></div>
       <div class="necesidades">
         ${NECESIDADES.map((n) => `<a class="nec rev" href="#/catalogo/${n.f}"><span class="nec-ico">${ico(n.ico)}</span><b>${esc(n.t)}</b><span>${esc(n.s)}</span></a>`).join("")}
       </div>
@@ -149,7 +146,7 @@ function vInicio() {
 
   <section class="sec sec-gris">
     <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">Líneas de negocio</span><h2>Un solo aliado para toda la visibilidad de tu marca</h2><p>Puedes pedir una sola línea o combinarlas en un mismo proyecto.</p></div>
+      <div class="sec-head"><h2>Un solo aliado para toda la visibilidad de tu marca</h2><p>Puedes pedir una sola línea o combinarlas en un mismo proyecto.</p></div>
       <div class="lineas">
         ${LINEAS.map((l, i) => `<a class="linea rev ${i < 2 ? "grande" : ""}" href="#/catalogo/${l.id}">
           <div class="linea-img"><img class="${l.cubre ? "cubre" : ""}" src="${IMG}${l.img}" alt="${esc(l.nombre)}">${l.nuevo ? `<span class="chip-l">Nuevo</span>` : ""}</div>
@@ -161,7 +158,7 @@ function vInicio() {
 
   <section class="sec">
     <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">Más pedidos</span><h2>Productos destacados</h2><p>Agrega los que te interesen a tu cotización y envíala en un solo mensaje.</p></div>
+      <div class="sec-head"><h2>Productos destacados</h2><p>Agrega los que te interesen a tu cotización y envíala en un solo mensaje.</p></div>
       <div class="grid-prod">${destacados.map(tarjeta).join("")}</div>
       <p style="margin-top:32px;text-align:center"><a class="btn btn-linea" href="#/catalogo">Ver todo el catálogo ${ico("flecha")}</a></p>
     </div>
@@ -169,7 +166,7 @@ function vInicio() {
 
   <section class="sec sec-gris" id="proceso">
     <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">Cómo trabajamos</span><h2>De la idea a la entrega, con una persona que te atiende</h2></div>
+      <div class="sec-head"><h2>De la idea a la entrega, con una persona que te atiende</h2></div>
       ${bloquePasos()}
     </div>
   </section>
@@ -178,16 +175,16 @@ function vInicio() {
     <div class="wrap">
       <div class="temporada rev">
         <div class="temporada-txt">
-          <span class="eyebrow">Temporada de fin de año</span>
+          
           <h2>Cierra el año con un solo proveedor</h2>
           <p>Regalos corporativos, catering para tus eventos y el material de marca, coordinados en un mismo pedido.</p>
           <div class="temporada-lista"><span>Cajas de Navidad</span><span>Kits para colaboradores</span><span>Brunch y refrigerios</span><span>Semana de la Salud</span><span>Merchandising</span></div>
           <a class="btn btn-claro" href="#/catalogo/regalos">Ver opciones ${ico("flecha")}</a>
         </div>
         <div class="temporada-img">
-          <figure><img src="${IMG}ia-regalos.webp" alt="Caja de regalo corporativo de Navidad"><span class="ref">Imagen ilustrativa (IA)</span></figure>
-          <figure><img src="${IMG}ia-catering.webp" alt="Catering empresarial"><span class="ref">IA</span></figure>
-          <figure><img src="${IMG}ia-bienestar.webp" alt="Kit de bienestar"><span class="ref">IA</span></figure>
+          <figure><img src="${IMG}foto-regalos.webp" alt="Caja de regalo corporativo de Navidad"></figure>
+          <figure><img src="${IMG}foto-catering.webp" alt="Catering empresarial"></figure>
+          <figure><img src="${IMG}foto-salud.webp" alt="Kit de bienestar"></figure>
         </div>
       </div>
     </div>
@@ -195,7 +192,7 @@ function vInicio() {
 
   <section class="sec sec-gris">
     <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">Por qué Gonflé</span><h2>Sentimos tu marca como si fuera nuestra</h2></div>
+      <div class="sec-head"><h2>Sentimos tu marca como si fuera nuestra</h2></div>
       <div class="razones">
         <div class="razon rev"><span class="nec-ico">${ico("megafono")}</span><h3>Todo va personalizado</h3><p>Cada pedido se fabrica o se marca con la identidad de tu empresa. No manejamos producto genérico.</p></div>
         <div class="razon rev"><span class="nec-ico">${ico("estrella")}</span><h3>Atención de persona a persona</h3><p>Te asesora alguien que entiende tu necesidad, te acompaña en el arte y responde por la entrega.</p></div>
@@ -211,7 +208,7 @@ function vInicio() {
 
   <section class="sec">
     <div class="wrap">
-      <div class="sec-head centro"><span class="eyebrow">Preguntas frecuentes</span><h2>Lo que nos preguntan antes de cotizar</h2></div>
+      <div class="sec-head centro"><h2>Lo que nos preguntan antes de cotizar</h2></div>
       ${bloqueFaq()}
     </div>
   </section>
@@ -254,7 +251,7 @@ function vProducto(id) {
   if (!p) return v404();
   const l = linea(p.linea);
   const rel = PRODUCTOS.filter((x) => x.linea === p.linea && x.id !== p.id).slice(0, 4);
-  const aviso = p.ia ? "Imagen ilustrativa generada con IA. El producto final se define en la cotización."
+  const aviso = p.ia ? "Imagen ilustrativa. El producto final se define contigo en la cotización."
     : p.sinFoto ? "Este producto aún no tiene fotografía. Pídenos muestras o fotos de trabajos anteriores por WhatsApp."
     : p.ref ? "Imagen de referencia del catálogo. Las marcas que aparecen son ejemplos de marcación y pertenecen a sus titulares." : "";
   return `
@@ -362,7 +359,7 @@ function vNosotros() {
       <p>Contamos con dos unidades de producción de inflables, a motor y de sellado por alta frecuencia, y personalizamos cada detalle con estampación, bordado, tampografía y serigrafía.</p>
       <p><span class="ph-claro">Por completar: año de fundación, equipo, fotos de planta y proyectos reales.</span></p>
     </div>
-    <div class="nos-img"><img src="${IMG}hero-pantera.webp" alt="Inflable publicitario gigante"><span class="ref">Imagen de referencia</span></div>
+    <div class="nos-img"><img src="${IMG}foto-evento.webp" alt="Evento corporativo de Gonflé"></div>
   </div></section>
   <section class="sec sec-gris"><div class="wrap">
     <div class="cifras">

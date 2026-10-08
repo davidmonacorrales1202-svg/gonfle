@@ -390,3 +390,69 @@ p{margin:0}
   .campo input,.campo select,.campo textarea,.cot-item input,.buscar input{font-size:16px}
   .filtros{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
 }
+
+/* ───────── Ajuste de marca (oct 2026): blanco, rojo y amarillo; diseño editorial sin tarjetas genéricas ───────── */
+:root{
+  --morado:#C0142F; --morado-osc:#E51D3F; --morado-claro:#FFF3DB;
+  --tinta:#1D1A1E; --texto:#4A4548; --suave:#7A7377;
+  --linea:#E8E3DF; --fondo:#FAF8F5;
+  --r-s:6px; --r-m:6px; --r-l:6px;
+  --sombra:none; --sombra-alta:0 6px 18px rgba(0,0,0,.08);
+}
+.btn,.nav a,.filtro,.buscar input,.badge,.chip-l,.temporada-lista span,.ref,.toast{border-radius:6px}
+.btn:hover{transform:none}
+.nav a.activo,.nav a:hover{background:transparent;color:var(--rojo);box-shadow:inset 0 -2px 0 var(--rojo);border-radius:0}
+
+/* Hero */
+.hero{background:#fff}
+.hero h1 em{color:var(--rojo)}
+.hero-foto{position:relative;margin:0 24px 24px 0}
+.hero-foto::before{content:"";position:absolute;inset:24px -24px -24px 24px;background:var(--amarillo)}
+.hero-foto img{position:relative;width:100%;aspect-ratio:4/3.3;object-fit:cover;border-radius:4px}
+.hero-datos{border-top:2px solid var(--tinta)}
+
+/* Necesidades: lista sobria en vez de tarjetas con ícono */
+.necesidades{gap:0 28px}
+.nec{border:0;border-top:2px solid var(--tinta);border-radius:0;background:none;padding:18px 0 6px}
+.nec:hover{transform:none;box-shadow:none;border-color:var(--rojo)}
+.nec:hover b{color:var(--rojo)}
+.nec-ico{background:none!important;width:auto;height:auto;justify-content:start;color:var(--rojo)!important}
+
+/* Líneas y productos */
+.linea,.prod{border-radius:4px}
+.linea:hover,.prod:hover{transform:none;box-shadow:none;border-color:var(--tinta)}
+.linea:hover .linea-img img{transform:none}
+.chip-l{background:var(--rojo);color:#fff}
+.linea-txt .mas{border-bottom:2px solid currentColor;padding-bottom:2px}
+
+/* Cómo trabajamos: pasos en fila con líneas finas, sin tarjetas ni números grandes */
+.pasos{gap:0;border-top:2px solid var(--tinta)}
+.paso{border:0;border-radius:0;background:none;padding:22px 22px 6px 0}
+.paso+.paso{padding-left:22px;border-left:1px solid var(--linea)}
+.paso::before{content:counter(p);display:inline;font-size:1.05rem;font-weight:800;color:var(--rojo);margin:0 8px 0 0;letter-spacing:0}
+.paso h3{display:inline;font-size:1.06rem}
+.condiciones{border:0;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);border-radius:0;background:none}
+
+/* Temporada: bloque rojo sólido */
+.temporada{background:var(--rojo);color:#FFE4E9;border-radius:0}
+.temporada-lista span{background:none;padding:0;margin-right:14px;color:#fff;font-weight:600}
+.temporada-lista span::before{content:"— ";color:var(--amarillo)}
+.temporada-img figure{border-radius:4px}
+
+/* Por qué: lista con líneas finas, sin íconos */
+.razones{gap:0 32px}
+.razon{border:0;border-top:2px solid var(--tinta);border-radius:0;background:none;padding:20px 0}
+.razon .nec-ico{display:none}
+
+/* Cierre y pie */
+.cta-final{border-radius:0}
+.cta-final::before{display:none}
+.footer{background:#1D1A1E}
+.nos-img{border-radius:4px;box-shadow:none}
+.logo-ph{border-radius:4px}
+@media (max-width:900px){
+  .hero-foto{margin-right:24px}
+  .paso,.paso+.paso{padding:20px 0 6px;border-left:0}
+  .paso+.paso{border-top:1px solid var(--linea)}
+  .razones{gap:0}
+}
