@@ -148,7 +148,7 @@ function vInicio() {
     <div class="wrap">
       <div class="sec-head"><h2>Un solo aliado para toda la visibilidad de tu marca</h2><p>Puedes pedir una sola línea o combinarlas en un mismo proyecto.</p></div>
       <div class="lineas">
-        ${LINEAS.map((l, i) => `<a class="linea rev ${i < 2 ? "grande" : ""}" href="#/catalogo/${l.id}">
+        ${LINEAS.map((l, i) => `<a class="linea rev ${LINEAS.length % 3 && i < 2 ? "grande" : ""}" href="#/catalogo/${l.id}">
           <div class="linea-img"><img class="${l.cubre ? "cubre" : ""}" src="${IMG}${l.img}" alt="${esc(l.nombre)}">${l.nuevo ? `<span class="chip-l">Nuevo</span>` : ""}</div>
           <div class="linea-txt"><h3>${esc(l.nombre)}</h3><p>${esc(l.desc)}</p><span class="mas">Ver productos ${ico("flecha")}</span></div>
         </a>`).join("")}
