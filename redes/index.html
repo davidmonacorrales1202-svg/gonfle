@@ -113,6 +113,113 @@ footer{padding:28px 0 40px;font-size:.85rem;color:var(--suave)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
 footer img{height:34px}
 
+
+/* Índice */
+.indice{position:sticky;top:0;z-index:20;background:var(--rojo)}
+.indice .wrap{display:flex;gap:4px 26px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.indice a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap}
+.indice a:hover{color:var(--amarillo)}
+section{scroll-margin-top:60px}
+
+/* Catálogo de WhatsApp */
+.wa-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;margin-top:8px}
+.wa-intro .incl{margin-top:22px;padding:14px 18px;background:var(--amarillo);color:#3A2600;font-size:.95rem;max-width:560px}
+.wa-intro .incl b{color:var(--tinta)}
+.cifras{display:flex;border-top:2px solid var(--tinta);max-width:520px;margin-top:26px}
+.cifras div{flex:1;padding:12px 14px 0 0}
+.cifras div+div{padding-left:14px;border-left:1px solid var(--linea)}
+.cifras b{display:block;font-size:1.6rem;font-weight:800;color:var(--tinta);letter-spacing:-.03em;line-height:1.1}
+.cifras span{font-size:.84rem;color:var(--suave)}
+.tel{justify-self:center;width:310px;border-radius:42px;background:var(--tinta);padding:11px;position:relative;z-index:0}
+.tel::before{content:"";position:absolute;inset:26px -22px -22px 26px;background:var(--amarillo);z-index:-1}
+.pant{border-radius:32px;overflow:hidden;background:#fff;height:590px;display:flex;flex-direction:column}
+.barra{background:#F0F2F5;padding:16px 16px 12px;display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--suave)}
+.barra b{color:var(--tinta);font-size:.96rem}
+.perfil{text-align:center;padding:16px 18px 12px;border-bottom:8px solid #F0F2F5}
+.perfil .av{width:80px;height:80px;border-radius:50%;margin:0 auto 8px;border:1px solid var(--linea);display:grid;place-items:center;background:#fff}
+.perfil .av img{width:62px}
+.perfil h3{font-size:1.1rem}
+.perfil small{display:block;color:var(--suave);font-size:.76rem}
+.perfil p{font-size:.78rem;margin:8px 0 0;line-height:1.5}
+.cat{padding:12px 16px;overflow:hidden;flex:1}
+.cat-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.cat-h b{color:var(--tinta);font-size:.88rem}
+.cat-h span{color:var(--wa,#1FAF5A);font-size:.76rem;font-weight:600}
+.cat-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:12px}
+.cat-mini img{aspect-ratio:1;object-fit:cover;border-radius:6px}
+.cole{display:flex;align-items:center;gap:12px;padding:8px 0;border-top:1px solid #F0F2F5}
+.cole img{width:42px;height:42px;border-radius:6px;object-fit:cover}
+.cole b{display:block;color:var(--tinta);font-size:.82rem;line-height:1.3}
+.cole span{font-size:.72rem;color:var(--suave)}
+.wa-sub{font-size:1.45rem;font-weight:800;margin:56px 0 6px}
+.coleccion{padding:28px 0 4px;border-top:1px solid var(--linea)}
+.coleccion h4{font-size:1.25rem;color:var(--tinta);margin:0 0 18px;letter-spacing:-.02em}
+.coleccion h4 small{font-size:.88rem;font-weight:500;color:var(--suave);margin-left:8px;letter-spacing:0}
+.prods{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 22px;margin-bottom:26px}
+.prod img{aspect-ratio:1;object-fit:cover;border-radius:4px;width:100%}
+.prod h5{font-size:1rem;color:var(--tinta);margin:12px 0 4px;line-height:1.3}
+.prod p{font-size:.88rem;margin-bottom:8px;line-height:1.55}
+.prod .cod{font-size:.78rem;color:var(--suave);border-top:1px solid var(--linea);padding-top:6px}
+.par{display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
+.una .prods{grid-template-columns:1fr}
+.una .prod{display:grid;grid-template-columns:44% 1fr;gap:20px;align-items:start}
+.una .prod h5{margin-top:0}
+.sola .prod{grid-template-columns:28% 1fr}
+.msj{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;margin-top:24px}
+.chat{background:#EFEAE2;padding:24px 20px}
+.chat small{display:block;font-size:.8rem;font-weight:600;color:var(--suave);margin:0 0 8px}
+.bur{background:#fff;border-radius:10px 10px 10px 2px;padding:12px 14px;font-size:.93rem;color:var(--tinta);max-width:94%;margin-bottom:20px;box-shadow:0 1px 1px rgba(0,0,0,.08)}
+.rapidas{width:100%;border-collapse:collapse;font-size:.94rem}
+.rapidas td{padding:11px 12px 11px 0;border-bottom:1px solid var(--linea);vertical-align:top}
+.rapidas tr:first-child td{border-top:2px solid var(--tinta)}
+.rapidas td:first-child{font-weight:700;color:var(--rojo);white-space:nowrap;width:100px}
+.msj h4{font-size:1.2rem;color:var(--tinta);margin:0 0 12px}
+.etiquetas{display:flex;flex-wrap:wrap;gap:8px}
+.etiquetas span{font-size:.86rem;font-weight:600;padding:4px 12px;border-radius:3px;background:#fff;border:1px solid var(--linea);color:var(--tinta)}
+.etiquetas span:nth-child(1){border-left:4px solid #3B82F6}.etiquetas span:nth-child(2){border-left:4px solid var(--amarillo)}
+.etiquetas span:nth-child(3){border-left:4px solid #F59E0B}.etiquetas span:nth-child(4){border-left:4px solid #1FAF5A}
+.etiquetas span:nth-child(5){border-left:4px solid var(--rojo)}.etiquetas span:nth-child(6){border-left:4px solid var(--tinta)}
+.guia-pasos{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--tinta);margin-top:22px}
+.guia-pasos div{padding:18px 22px 6px 0}
+.guia-pasos div+div{padding-left:22px;border-left:1px solid var(--linea)}
+.guia-pasos b{display:block;color:var(--tinta);margin-bottom:6px}
+.guia-pasos p{font-size:.93rem}
+.guia-pasos code{font-family:inherit;font-weight:600;color:var(--tinta);background:var(--fondo);padding:1px 5px}
+.carga{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:26px}
+.carga th{text-align:left;font-size:.8rem;font-weight:600;color:var(--suave);padding:0 12px 10px 0;border-bottom:2px solid var(--tinta)}
+.carga td{padding:12px 12px 12px 0;border-bottom:1px solid var(--linea);vertical-align:top}
+.carga td.f{width:78px}
+.carga td img{width:64px;min-width:64px;height:64px;object-fit:cover;border-radius:3px}
+.carga td.c{white-space:nowrap;font-weight:600;color:var(--tinta)}
+.carga td.n{font-weight:600;color:var(--tinta);min-width:150px}
+.carga td.e{white-space:nowrap}
+.carga td.e a{font-size:.84rem;font-weight:600}
+.descarga{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:26px;padding:22px 24px;background:var(--fondo)}
+.descarga p{margin:0;font-size:.93rem;flex:1;min-width:240px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:6px;font-weight:600;text-decoration:none;background:var(--rojo);color:#fff}
+.btn:hover{background:var(--tinta)}
+@media (max-width:860px){
+  .wa-intro,.msj{grid-template-columns:1fr;gap:40px}
+  .prods{grid-template-columns:repeat(3,1fr)}
+  .guia-pasos{grid-template-columns:1fr}
+  .guia-pasos div,.guia-pasos div+div{padding:16px 0 4px;border-left:0}
+  .guia-pasos div+div{border-top:1px solid var(--linea)}
+}
+@media (max-width:640px){
+  .indice .wrap{flex-wrap:nowrap;overflow-x:auto;gap:22px;-webkit-overflow-scrolling:touch}
+  .indice a{font-size:.88rem}
+  .prods{grid-template-columns:1fr 1fr;gap:20px 14px}
+  .par{grid-template-columns:1fr}
+  .una .prod,.sola .prod{grid-template-columns:42% 1fr;gap:14px}
+  .tel{width:290px}.pant{height:560px}.tel::before{inset:20px -12px -12px 20px}
+  .carga thead{display:none}
+  .carga,.carga tbody,.carga tr,.carga td{display:block;width:100%}
+  .carga tr{display:grid;grid-template-columns:64px 1fr;gap:4px 14px;padding:14px 0;border-bottom:1px solid var(--linea)}
+  .carga td{padding:0;border:0}
+  .carga td.f{grid-row:span 5}
+  .carga td.col{font-size:.8rem;color:var(--suave)}
+  .carga td.e{white-space:normal}
+}
 @media (max-width:860px){
   .datos{grid-template-columns:1fr 1fr}
   .datos div:nth-child(3){padding-left:0;border-left:0}
@@ -161,7 +268,13 @@ footer img{height:34px}
   </div>
 </header>
 
-<section>
+<nav class="indice" aria-label="Contenido de la propuesta">
+  <div class="wrap">
+    <a href="#diagnostico">Diagnóstico</a><a href="#enfoque">Enfoque</a><a href="#whatsapp">Catálogo de WhatsApp</a><a href="#puesta">Puesta a punto</a><a href="#planes">Planes</a><a href="#condiciones">Condiciones</a>
+  </div>
+</nav>
+
+<section id="diagnostico">
   <div class="wrap">
     <h2>Diagnóstico</h2>
     <p class="lead">Revisión de la información pública de cada canal, realizada el 13 de octubre de 2026.</p>
@@ -190,7 +303,7 @@ footer img{height:34px}
   </div>
 </section>
 
-<section>
+<section id="enfoque">
   <div class="wrap">
     <h2>Enfoque</h2>
     <p class="lead">Cada red cumple un papel distinto. Los clientes de Gonflé son empresas, así que la prioridad está en los canales donde se toman decisiones de compra.</p>
@@ -212,7 +325,79 @@ footer img{height:34px}
   </div>
 </section>
 
-<section>
+<section id="whatsapp">
+  <div class="wrap">
+    <h2>Catálogo de WhatsApp Business</h2>
+    <div class="wa-intro">
+      <div>
+        <p class="lead">WhatsApp es el canal donde Gonflé cierra sus ventas. Con el catálogo, los clientes recorren las líneas, eligen un producto y escriben con la referencia exacta, sin salir del chat.</p>
+        <p>La selección es corta para recorrerla cómodamente en el celular y usa las mismas líneas de la presentación comercial. Cada producto enlaza a su ficha en el sitio web y el precio queda abierto, porque cada pedido se cotiza según cantidad y marcación.</p>
+        <div class="cifras" id="cifras"></div>
+        <p class="incl"><b>Incluido en el proyecto del sitio web.</b> La configuración del catálogo, los mensajes y las etiquetas no tiene costo adicional.</p>
+      </div>
+      <div class="tel" aria-hidden="true">
+        <div class="pant">
+          <div class="barra"><b>Gonflé</b><span>· Cuenta de empresa</span></div>
+          <div class="perfil">
+            <div class="av"><img src="../assets/img/logo-gonfle.png" alt=""></div>
+            <h3>Gonflé</h3>
+            <small>Servicios de publicidad · Medellín</small>
+            <p>Inflables, impresos, merchandising, regalos corporativos y brunch para empresas.</p>
+          </div>
+          <div class="cat">
+            <div class="cat-h"><b>Catálogo</b><span>Ver todo</span></div>
+            <div class="cat-mini" id="mini"></div>
+            <div id="coles-tel"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="wa-sub">Productos propuestos</h3>
+    <p>Gonflé puede agregar o quitar productos antes de la carga.</p>
+    <div id="colecciones" style="margin-top:22px"></div>
+
+    <h3 class="wa-sub">Mensajes y orden de las conversaciones</h3>
+    <p>Mensajes automáticos, respuestas rápidas y etiquetas para que ningún cliente quede sin respuesta ni sin seguimiento.</p>
+    <div class="msj">
+      <div class="chat">
+        <small>Mensaje de bienvenida</small>
+        <div class="bur">¡Hola! Soy María Adelaida, de Gonflé. Cuéntame qué producto necesitas, cuántas unidades y para qué fecha, y te envío la cotización.</div>
+        <small>Mensaje de ausencia</small>
+        <div class="bur">Gracias por escribirnos. En este momento estamos fuera del horario de atención; te responderemos en cuanto volvamos. Mientras tanto, puedes ver nuestro catálogo aquí en WhatsApp.</div>
+        <p class="nota" style="margin:4px 0 0">El horario de atención se define con Gonflé.</p>
+      </div>
+      <div>
+        <h4>Respuestas rápidas</h4>
+        <table class="rapidas">
+          <tr><td>/catalogo</td><td>Te comparto nuestro catálogo para que veas las líneas y los productos.</td></tr>
+          <tr><td>/tiempos</td><td>Los inflables se producen entre 8 y 15 días hábiles. Para los demás productos, te confirmamos el tiempo en la cotización.</td></tr>
+          <tr><td>/anticipo</td><td>Para iniciar la producción se paga un anticipo del 50 %. Las condiciones de pago del saldo van en la cotización.</td></tr>
+          <tr><td>/arte</td><td>Envíanos tu logo en PDF, AI o PNG de buena calidad, y te mostramos cómo queda antes de producir.</td></tr>
+          <tr><td>/datos</td><td>Para facturar necesitamos razón social, NIT, dirección, correo y persona de contacto.</td></tr>
+        </table>
+        <h4 style="margin-top:28px">Etiquetas de seguimiento</h4>
+        <div class="etiquetas"><span>Nuevo</span><span>Cotizado</span><span>En seguimiento</span><span>Aprobado</span><span>En producción</span><span>Entregado</span></div>
+      </div>
+    </div>
+
+    <h3 class="wa-sub">Guía de carga</h3>
+    <p>Todo lo necesario para cargar el catálogo desde la aplicación WhatsApp Business del celular de la empresa.</p>
+    <div class="guia-pasos">
+      <div><b>1. Colecciones</b><p>En <code>Herramientas para la empresa → Catálogo</code>, crear las seis colecciones en el orden de la tabla.</p></div>
+      <div><b>2. Productos</b><p>Con <code>Agregar artículo</code>, subir la foto y copiar nombre, descripción, enlace y código de cada fila. El precio se deja vacío.</p></div>
+      <div><b>3. Mensajes y etiquetas</b><p>En <code>Herramientas para la empresa</code>, activar el mensaje de bienvenida, el de ausencia, las respuestas rápidas y las etiquetas.</p></div>
+    </div>
+    <div style="overflow-x:auto"><table class="carga" id="carga"></table></div>
+    <p class="nota">Los enlaces apuntan por ahora a la versión preliminar del sitio (davidmonacorrales1202-svg.github.io/gonfle). Cuando el sitio se publique en gonflegroup.com, se actualizan en el catálogo.</p>
+    <div class="descarga">
+      <p>El paquete contiene las 19 fotos en formato cuadrado (1080 × 1080, el que usa WhatsApp), numeradas en el orden de la tabla, y una hoja de cálculo con los mismos datos.</p>
+      <a class="btn" href="wa/Gonfle-catalogo-whatsapp.zip" download>Descargar fotos y hoja de carga</a>
+    </div>
+  </div>
+</section>
+
+<section id="puesta">
   <div class="wrap">
     <h2>Puesta a punto</h2>
     <p class="lead">Se realiza una sola vez, durante el primer mes, y deja todos los canales con información correcta y una imagen coherente con el nuevo logo.</p>
@@ -234,7 +419,7 @@ footer img{height:34px}
   </div>
 </section>
 
-<section>
+<section id="planes">
   <div class="wrap">
     <h2>Planes de gestión mensual</h2>
     <p class="lead">Tres opciones según el volumen de contenido y los canales que se quieran gestionar. Se puede subir o bajar de plan al terminar cada mes.</p>
@@ -268,7 +453,7 @@ footer img{height:34px}
   </div>
 </section>
 
-<section>
+<section id="noventa">
   <div class="wrap">
     <h2>Los primeros 90 días</h2>
     <p class="lead">Un plazo prudente para pasar de cuentas inactivas a un ritmo constante y tener las primeras cifras para decidir.</p>
@@ -280,7 +465,7 @@ footer img{height:34px}
   </div>
 </section>
 
-<section>
+<section id="condiciones">
   <div class="wrap">
     <h2>Condiciones</h2>
     <div class="dos">
@@ -324,5 +509,40 @@ footer img{height:34px}
 
 <footer><div class="wrap"><img src="../assets/img/logo-gonfle.png" alt="Gonflé"><span>Propuesta presentada por David Moná Corrales a Gonflé S.A.S. · Vigente hasta el 13 de noviembre de 2026</span></div></footer>
 
+<script src="wa/productos.js?v=1"></script>
+<script>
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const cols = [...new Set(PRODUCTOS.map((p) => p.coleccion))];
+const de = (c) => PRODUCTOS.filter((p) => p.coleccion === c);
+const img = (p) => `wa/img/${p.foto}.webp`;
+const cant = (n, s, p) => `${n} ${n === 1 ? s : p}`;
+document.getElementById("cifras").innerHTML =
+  `<div><b>${PRODUCTOS.length}</b><span>productos</span></div><div><b>${cols.length}</b><span>colecciones</span></div><div><b>1</b><span>clic para cotizar</span></div>`;
+document.getElementById("mini").innerHTML = ["Cajas de temporada", "Golpeadores en válvula", "Plastilonas y banderines"]
+  .map((n) => PRODUCTOS.find((p) => p.nombre === n)).filter(Boolean).map((p) => `<img src="${img(p)}" alt="">`).join("");
+document.getElementById("coles-tel").innerHTML = cols.map((c) =>
+  `<div class="cole"><img src="${img(de(c)[0])}" alt=""><div><b>${esc(c)}</b><span>${cant(de(c).length, "artículo", "artículos")}</span></div></div>`).join("");
+const bloque = (c, extra = "") => `
+  <div class="coleccion ${de(c).length === 1 ? "una" : ""} ${extra}">
+    <h4>${esc(c)}<small>${cant(de(c).length, "producto", "productos")}</small></h4>
+    <div class="prods">${de(c).map((p) => `
+      <div class="prod"><img src="${img(p)}" alt="${esc(p.nombre)}" loading="lazy">
+        <div><h5>${esc(p.nombre)}</h5><p>${esc(p.descripcion)}</p><div class="cod">Código ${p.codigo}</div></div>
+      </div>`).join("")}
+    </div>
+  </div>`;
+// Las colecciones de un solo producto se muestran en pareja, o a lo ancho si quedan solas
+let html = "";
+for (let i = 0; i < cols.length; i++) {
+  const c = cols[i], sig = cols[i + 1];
+  if (de(c).length === 1 && sig && de(sig).length === 1) { html += `<div class="par">${bloque(c)}${bloque(sig)}</div>`; i++; }
+  else html += bloque(c, de(c).length === 1 ? "sola" : "");
+}
+document.getElementById("colecciones").innerHTML = html;
+document.getElementById("carga").innerHTML =
+  `<thead><tr><th>Foto</th><th>Código</th><th>Colección</th><th>Nombre</th><th>Descripción</th><th>Enlace</th></tr></thead><tbody>` +
+  PRODUCTOS.map((p) => `<tr><td class="f"><img src="${img(p)}" alt="" loading="lazy"></td><td class="c">${p.codigo}</td><td class="col">${esc(p.coleccion)}</td><td class="n">${esc(p.nombre)}</td><td>${esc(p.descripcion)}</td><td class="e"><a href="${p.enlace}" target="_blank" rel="noopener">${esc(p.enlace.split("#")[1])}</a></td></tr>`).join("") +
+  `</tbody>`;
+</script>
 </body>
 </html>
