@@ -91,6 +91,7 @@ h2{font-size:clamp(1.65rem,3.4vw,2.4rem);font-weight:800;margin-bottom:14px}
 .planes td.si{color:var(--tinta)}
 .planes td.nada{color:#B8B2C0}
 .tabla-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.desliza{display:none;font-size:.86rem;font-weight:600;color:var(--rojo);margin:22px 0 -18px}
 
 /* Condiciones */
 .dos{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:30px}
@@ -133,6 +134,7 @@ footer img{height:34px}
   .canales td:nth-child(2){margin:8px 0}
   .concl{padding:24px 22px}
   .planes{min-width:640px}
+  .desliza{display:block}
   .meses td:first-child{width:auto;white-space:normal;display:block;padding-bottom:4px}
   .meses td{display:block;padding:0 0 14px}
   .meses tr td:last-child{border-bottom:1px solid var(--linea)}
@@ -236,6 +238,7 @@ footer img{height:34px}
   <div class="wrap">
     <h2>Planes de gestión mensual</h2>
     <p class="lead">Tres opciones según el volumen de contenido y los canales que se quieran gestionar. Se puede subir o bajar de plan al terminar cada mes.</p>
+    <p class="desliza">Desliza la tabla hacia la izquierda para ver los tres planes →</p>
     <div class="tabla-scroll">
       <table class="planes">
         <thead>
