@@ -177,13 +177,13 @@ function vInicio() {
         <div class="temporada-txt">
           
           <h2>Cierra el año con un solo proveedor</h2>
-          <p>Regalos corporativos, catering para tus eventos y el material de marca, coordinados en un mismo pedido.</p>
-          <div class="temporada-lista"><span>Cajas de Navidad</span><span>Kits para colaboradores</span><span>Brunch y refrigerios</span><span>Semana de la Salud</span><span>Merchandising</span></div>
+          <p>Regalos corporativos, brunch para tus eventos y el material de marca, coordinados en un mismo pedido.</p>
+          <div class="temporada-lista"><span>Cajas de temporada</span><span>Kits para colaboradores</span><span>Brunch y refrigerios</span><span>Semana de la Salud</span><span>Merchandising</span></div>
           <a class="btn btn-claro" href="#/catalogo/regalos">Ver opciones ${ico("flecha")}</a>
         </div>
         <div class="temporada-img">
-          <figure><img src="${IMG}foto-regalos.webp" alt="Caja de regalo corporativo de Navidad"></figure>
-          <figure><img src="${IMG}foto-catering.webp" alt="Catering empresarial"></figure>
+          <figure><img src="${IMG}foto-regalos.webp" alt="Caja de regalo corporativo de temporada"></figure>
+          <figure><img src="${IMG}foto-catering.webp" alt="Brunch corporativo para eventos"></figure>
           <figure><img src="${IMG}foto-salud.webp" alt="Kit de bienestar"></figure>
         </div>
       </div>

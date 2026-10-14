@@ -15,9 +15,9 @@ const IMG = "assets/img/";
 
 const LINEAS = [
   { id: "inflables", nombre: "Inflables publicitarios", corto: "Inflables",
-    desc: "Arcos, réplicas de producto, muñecos, disfraces y juegos. A motor o sellados, fabricados a la medida de tu marca.",
+    desc: "Arcos, réplicas de producto, muñecos, disfraces, juegos y golpeadores. A motor, en válvula o sellados, fabricados a la idea de tu marca.",
     intro: "Los inflables se diseñan y fabrican por proyecto: cuéntanos la forma, el tamaño y la fecha, y te enviamos propuesta. Producción entre 8 y 15 días hábiles.",
-    img: "foto-inflables.webp", cubre: true },
+    img: "foto-inf-mix.webp", cubre: true },
   { id: "pop", nombre: "Material POP y punto de venta", corto: "Material POP",
     desc: "Cenefas, cabezotes, banderines, golpeadores, manillas, banderas, carpas y pendones para que tu marca domine el punto de venta.",
     intro: "Producción litográfica y de material POP en volumen. Para manillas, cenefas y litografía trabajamos desde miles de unidades.",
@@ -31,12 +31,12 @@ const LINEAS = [
     intro: "Fabricamos y personalizamos prendas con los textiles de tu elección y te asesoramos según el uso.",
     img: "t-hoodie.webp", cubre: true },
   { id: "impresos", nombre: "Impresos y empaques", corto: "Impresos",
-    desc: "Bolsas, cajas, libretas, agendas, calendarios, afiches y folletos impresos con la identidad de tu marca.",
-    intro: "Todos los impresos se personalizan con tu logo. Medidas, papel y cantidades se definen contigo en la cotización.",
+    desc: "Impresos en litografía, flexografía y material sostenible: bolsas, cajas, libretas, calendarios, plastilonas, banderines y exhibidores en PET reciclado.",
+    intro: "Todos los impresos se personalizan con tu logo. Medidas, material y cantidades se definen contigo en la cotización.",
     img: "imp-bolsas-premium.webp", cubre: true },
-  { id: "regalos", nombre: "Regalos y catering corporativo", corto: "Regalos y catering",
-    desc: "Cajas de Navidad, kits para colaboradores y clientes, refrigerios, brunch y jornadas de bienestar.",
-    intro: "Cajas, kits, alimentación y jornadas de bienestar con la marca de tu empresa.",
+  { id: "regalos", nombre: "Regalos corporativos y brunch", corto: "Regalos y brunch",
+    desc: "Cajas de temporada, kits para colaboradores y clientes, brunch corporativo para eventos y proyectos especiales.",
+    intro: "Cajas, kits, brunch para eventos y proyectos especiales con la marca de tu empresa.",
     img: "foto-regalos.webp", cubre: true, nuevo: true },
 ];
 
@@ -65,6 +65,12 @@ const PRODUCTOS = [
   { id: "cilindro-stand", linea: "inflables", nombre: "Cilindros, esferas y stands", img: "inf-stand.webp", ref: true, proyecto: true,
     desc: "Formas publicitarias para interior y exterior: cilindros, esferas, huracanes y stands inflables.",
     specs: { "Tipo": "Inflable a motor o sellado", "Medidas": "A la medida", "Usos": "Publicidad interior y exterior", "Producción": "8 a 15 días hábiles" } },
+  { id: "golpeadores-valvula", linea: "inflables", nombre: "Golpeadores en válvula", img: "foto-inf-golpeadores.webp", ia: true, cubre: true,
+    desc: "Barras inflables que el público golpea en estadios, conciertos y eventos.",
+    specs: { "Tipo": "En válvula", "Personalización": "Con tu logo e identidad de marca", "Medidas y cantidades": "Se definen en la cotización" } },
+  { id: "inflables-sellados", linea: "inflables", nombre: "Inflables sellados", img: "foto-inf-sellados.webp", ia: true, cubre: true,
+    desc: "Piscinas infantiles, flotadores, pelotas y botellas inflables con tu marca.",
+    specs: { "Tipo": "Sellado", "Personalización": "Con tu logo e identidad de marca", "Medidas y cantidades": "Se definen en la cotización" } },
 
   // ───────── Material POP
   { id: "manillas", linea: "pop", nombre: "Manillas publicitarias", sinFoto: true, destacado: true,
@@ -113,6 +119,12 @@ const PRODUCTOS = [
     specs: { "Material": "Cartón e impresión", "Personalización": "Con la gráfica de tu marca", "Cantidades": "Se definen en la cotización" } },
 
   // ───────── Impresos y empaques
+  { id: "flexografia", linea: "impresos", nombre: "Impresos en flexografía", img: "foto-imp-flexo.webp", ia: true, cubre: true, destacado: true,
+    desc: "Plastilonas, banderines y bolsas plásticas impresas para cerrar espacios y vestir tus eventos.",
+    specs: { "Tipo": "Flexografía", "Personalización": "Con tu logo e identidad de marca", "Medidas y cantidades": "Se definen en la cotización" } },
+  { id: "material-sostenible", linea: "impresos", nombre: "Impresos en material sostenible", img: "foto-imp-sostenible.webp", ia: true, cubre: true, destacado: true,
+    desc: "Exhibidores y bandejas en PET reciclado. Para una bandeja organizadora, nuestros aliados recuperaron 942 kilos de PET, equivalentes a 28.260 botellas de 300 ml.",
+    specs: { "Tipo": "PET reciclado", "Personalización": "Con tu logo e identidad de marca", "Medidas y cantidades": "Se definen en la cotización" } },
   { id: "bolsa-premium", linea: "impresos", nombre: "Bolsa premium con cordón", img: "imp-bolsas-premium.webp", destacado: true,
     desc: "Bolsa de papel con acabado elegante para marcas, tiendas y regalos.",
     specs: { "Personalización": "Con tu logo e identidad de marca", "Medidas y cantidades": "Se definen en la cotización" } },
@@ -226,11 +238,11 @@ const PRODUCTOS = [
     desc: "Prendas promocionales para equipos comerciales, eventos y campañas.",
     specs: { "Prendas": "Hoodies, chaquetas, camisetas", "Marcación": "Bordado, estampación, serigrafía", "Cantidad mínima": "Por confirmar" } },
 
-  // ───────── Regalos y catering (línea nueva — imágenes IA)
-  { id: "cajas-navidad", linea: "regalos", nombre: "Cajas de Navidad y regalos corporativos", img: "foto-regalos.webp", ia: true, cubre: true, destacado: true,
-    desc: "Cajas personalizadas, anchetas y kits para colaboradores, clientes y proveedores, con el branding de tu empresa.",
+  // ───────── Regalos y brunch (línea nueva — imágenes IA)
+  { id: "cajas-temporada", linea: "regalos", nombre: "Cajas de temporada y regalos corporativos", img: "foto-regalos.webp", ia: true, cubre: true, destacado: true,
+    desc: "Cajas personalizadas que se arman a tu gusto, anchetas y kits para colaboradores, clientes y proveedores, con el branding de tu empresa.",
     specs: { "Incluye": "Caja o empaque personalizado, tarjeta corporativa, productos a elección", "Presupuestos": "Económico, corporativo, premium y ejecutivo", "Cantidad mínima": "Por confirmar", "Cobertura de entrega": "Por confirmar" } },
-  { id: "catering-empresarial", linea: "regalos", nombre: "Catering empresarial", img: "foto-catering.webp", ia: true, cubre: true,
+  { id: "brunch-corporativo", linea: "regalos", nombre: "Brunch corporativo para eventos", img: "foto-catering.webp", ia: true, cubre: true,
     desc: "Desayunos, brunch, refrigerios, lunch, almuerzos y estaciones de alimentos para reuniones y eventos corporativos.",
     specs: { "Servicios": "Desayunos, brunch, refrigerios, lunch, almuerzos, estaciones", "Cantidad mínima": "Por confirmar", "Cobertura": "Por confirmar" } },
   { id: "proyectos-especiales", linea: "regalos", nombre: "Proyectos especiales y personalizados", img: "foto-salud.webp", ia: true, cubre: true,
@@ -243,7 +255,7 @@ const NECESIDADES = [
   { t: "Destacar en punto de venta", s: "Cenefas, cabezotes, banderines y exhibición", f: "pop", ico: "tienda" },
   { t: "Regalar con mi logo", s: "Vasos, gorras, bolsas, libretas y más", f: "merch", ico: "regalo" },
   { t: "Vestir a mi equipo", s: "Dotaciones y prendas de marca", f: "textil", ico: "camisa" },
-  { t: "Cerrar el año con mi gente", s: "Cajas de Navidad, catering y bienestar", f: "regalos", ico: "estrella" },
+  { t: "Cerrar el año con mi gente", s: "Cajas de temporada, brunch y bienestar", f: "regalos", ico: "estrella" },
 ];
 
 const FAQS = [
