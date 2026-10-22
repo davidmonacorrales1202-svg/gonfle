@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gestión de redes sociales | Gonflé S.A.S.</title>
-<meta name="description" content="Diagnóstico de las redes sociales de Gonflé y propuesta de gestión mensual.">
+<meta name="description" content="Diagnóstico de las redes sociales de Gonflé, catálogo de WhatsApp Business y propuesta de gestión mensual.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#EB0045">
 <link rel="icon" href="../assets/img/favicon.png">
@@ -250,6 +250,23 @@ section{scroll-margin-top:60px}
   .meses td:first-child{border-bottom:0;padding-top:16px}
 }
 @media print{section{padding:30px 0}.concl,.valor-unico,.cierre{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* Versión resumida */
+.lineas-wa{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.lineas-wa figure{margin:0}
+.lineas-wa img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px}
+.lineas-wa figcaption{margin-top:10px;font-size:.92rem}
+.lineas-wa b{display:block;color:var(--tinta);font-size:1.05rem}
+.wa-incluye{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--tinta)}
+.wa-incluye li{padding:14px 18px 0 0;font-size:.93rem}
+.wa-incluye li+li{padding-left:18px;border-left:1px solid var(--linea)}
+.wa-incluye b{display:block;color:var(--tinta)}
+.inicio{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:40px}
+.inicio h3{font-size:1.2rem;margin-bottom:12px}
+.inicio ol{margin:0;padding-left:20px}
+.inicio li{margin-bottom:8px}
+@media (max-width:860px){.lineas-wa{grid-template-columns:1fr 1fr}.wa-incluye{grid-template-columns:1fr 1fr;row-gap:14px}.wa-incluye li:nth-child(3){padding-left:0;border-left:0}.inicio{grid-template-columns:1fr;gap:28px}}
+@media (max-width:640px){.lineas-wa{gap:16px 12px}.lineas-wa figcaption{font-size:.85rem}}
 </style>
 </head>
 <body>
@@ -258,69 +275,72 @@ section{scroll-margin-top:60px}
   <div class="wrap">
     <img src="../assets/img/logo-gonfle.png" alt="Gonflé">
     <h1>Diagnóstico y propuesta de <u class="y">gestión de redes sociales</u></h1>
-    <p class="sub">Estado actual de los canales digitales de Gonflé y un plan mensual para reactivarlos con trabajo real, de forma sostenible y con una inversión acorde a la etapa de la empresa.</p>
+    <p class="sub">Cómo están hoy los canales digitales de Gonflé y un plan mensual para reactivarlos con trabajo real.</p>
     <div class="datos">
       <div><span>Presentada a</span><b>María Adelaida Jiménez Grajales, Gerente</b></div>
       <div><span>Presentada por</span><b>David Moná Corrales</b></div>
-      <div><span>Fecha</span><b>13 de octubre de 2026</b></div>
-      <div><span>Vigencia</span><b>hasta el 13 de noviembre de 2026</b></div>
+      <div><span>Fecha</span><b>22 de octubre de 2026</b></div>
+      <div><span>Vigencia</span><b>hasta el 22 de noviembre de 2026</b></div>
     </div>
   </div>
 </header>
 
 <nav class="indice" aria-label="Contenido de la propuesta">
   <div class="wrap">
-    <a href="#diagnostico">Diagnóstico</a><a href="#enfoque">Enfoque</a><a href="#whatsapp">Catálogo de WhatsApp</a><a href="#puesta">Puesta a punto</a><a href="#planes">Planes</a><a href="#condiciones">Condiciones</a>
+    <a href="#diagnostico">Diagnóstico</a><a href="#propuesta">Propuesta</a><a href="#whatsapp">Catálogo de WhatsApp</a><a href="#inversion">Inversión</a>
   </div>
 </nav>
 
 <section id="diagnostico">
   <div class="wrap">
     <h2>Diagnóstico</h2>
-    <p class="lead">Revisión de la información pública de cada canal, realizada el 13 de octubre de 2026.</p>
+    <p class="lead">Información pública de cada canal, revisada el 22 de octubre de 2026.</p>
     <table class="canales">
       <thead><tr><th>Canal</th><th>Estado</th><th>Hallazgos</th></tr></thead>
       <tbody>
         <tr><td>Instagram<small>@gonfleoficial</small></td><td><span class="est mal">Inactivo</span></td>
-          <td>1.373 seguidores y 407 publicaciones. La última publicación es del 25 de noviembre de 2022. La biografía todavía ofrece bioseguridad, dotaciones y sitios web, y el enlace lleva a gonfle.com.co, dominio que hoy está a la venta. Las historias destacadas siguen siendo Merchandising, Inflables, Bioseguridad, Dotaciones y Marca.</td></tr>
+          <td>1.374 seguidores y 407 publicaciones. Última publicación: 25 de noviembre de 2022. La biografía ofrece bioseguridad, dotaciones y sitios web, y enlaza a gonfle.com.co, dominio que hoy está a la venta.</td></tr>
         <tr><td>Facebook<small>Gonflé</small></td><td><span class="est med">Desactualizado</span></td>
-          <td>121 seguidores. La descripción habla de inflables, material publicitario, POP y móviles publicitarios. Publica como contacto el correo gerencia@gonfle.com.co, que no recibe mensajes, y el enlace al dominio en venta.</td></tr>
+          <td>121 seguidores. Publica el correo gerencia@gonfle.com.co, que no recibe mensajes, y el enlace al dominio en venta.</td></tr>
         <tr><td>Perfil de Google<small>GONFLE SAS</small></td><td><span class="est med">Desactualizado</span></td>
-          <td>Aparece como agencia de publicidad, con calificación de 3,0 y una sola reseña, de hace dos años, en la que un cliente cuenta que fue a la dirección publicada y allí le indicaron que la atención es solo en línea. El enlace también lleva al dominio en venta.</td></tr>
+          <td>Calificación de 3,0 con una sola reseña: un cliente fue a la dirección publicada y allí le dijeron que la atención es solo en línea. Enlaza al dominio en venta.</td></tr>
         <tr><td>LinkedIn</td><td><span class="est no">Por verificar</span></td>
-          <td>El material comercial anuncia la página "Gonflé S.A.S.", pero no aparece en las búsquedas públicas. Es el canal con más potencial para llegar a áreas de mercadeo, compras y gestión humana.</td></tr>
+          <td>No aparece en búsquedas públicas. Es el canal con más potencial para llegar a mercadeo, compras y gestión humana.</td></tr>
         <tr><td>WhatsApp Business<small>312 757 6447</small></td><td><span class="est ok">Activo</span></td>
-          <td>Es el canal donde hoy se asesora, se cotiza y se cierra. Su configuración (catálogo, mensajes de bienvenida, respuestas rápidas y etiquetas) ya está incluida en el proyecto del sitio web.</td></tr>
-        <tr><td>TikTok</td><td><span class="est no">No existe</span></td>
-          <td>No se recomienda abrirlo en esta etapa: el comprador corporativo de Gonflé no toma ahí sus decisiones.</td></tr>
+          <td>Es donde hoy se asesora, se cotiza y se cierra.</td></tr>
       </tbody>
     </table>
     <div class="concl">
       <h3>Lo que encuentra hoy un cliente que busca a Gonflé</h3>
-      <p>Servicios que la empresa ya no ofrece, un correo que no responde, una reseña sobre una dirección donde no se atiende y enlaces a un dominio en venta. La base de 1.373 seguidores sigue ahí y es recuperable, pero antes de publicar es necesario corregir esa información.</p>
+      <p>Servicios que ya no se ofrecen, un correo que no responde y enlaces a un dominio en venta. La base de 1.374 seguidores es recuperable, pero primero hay que corregir esa información.</p>
     </div>
-    <p class="nota">El alcance, las visitas y la interacción de cada publicación solo pueden consultarse con acceso a las cuentas. Esas cifras serán el punto de partida del primer informe mensual.</p>
   </div>
 </section>
 
-<section id="enfoque">
+<section id="propuesta">
   <div class="wrap">
-    <h2>Enfoque</h2>
-    <p class="lead">Cada red cumple un papel distinto. Los clientes de Gonflé son empresas, así que la prioridad está en los canales donde se toman decisiones de compra.</p>
+    <h2>Propuesta</h2>
+    <p class="lead">Cada red cumple un papel distinto, y todo el contenido sigue un principio: <u class="y">mostrar trabajo real</u>.</p>
     <div class="roles">
-      <div><h3>WhatsApp Business</h3><p class="papel">Cierra la venta</p><p>Donde se cotiza y se hace seguimiento. Los estados y las listas de difusión mantienen a los clientes al tanto de las temporadas y las novedades.</p></div>
-      <div><h3>LinkedIn</h3><p class="papel">Abre puertas con empresas</p><p>Una página de empresa y el perfil de la gerente, activo y con contenido propio, para llegar a mercadeo, trade, compras y gestión humana en Antioquia.</p></div>
-      <div><h3>Instagram y Facebook</h3><p class="papel">Muestran el trabajo</p><p>Vitrina de pedidos entregados y de cómo se producen. Es lo primero que revisa un cliente antes de pedir una cotización.</p></div>
+      <div><h3>WhatsApp Business</h3><p class="papel">Cierra la venta</p><p>Catálogo, estados y listas de difusión para mantener a los clientes al tanto de las temporadas.</p></div>
+      <div><h3>LinkedIn</h3><p class="papel">Abre puertas con empresas</p><p>Página de empresa y perfil de la gerente para llegar a mercadeo, compras y gestión humana.</p></div>
+      <div><h3>Instagram y Facebook</h3><p class="papel">Muestran el trabajo</p><p>Pedidos entregados, cómo se producen, economía circular y temporadas.</p></div>
     </div>
-    <div class="temas">
-      <div><h3>Qué se publica</h3><p>Un principio guía todo el contenido: <u class="y">mostrar trabajo real</u>. Cada pedido entregado es una publicación.</p></div>
-      <ul>
-        <li><b>Trabajo entregado.</b> Inflables, impresos, regalos y eventos terminados, con la marca del cliente solo cuando lo autorice.</li>
-        <li><b>Cómo se hace.</b> El inflable inflándose, la impresión, el armado de una caja. Demuestra producción propia.</li>
-        <li><b>Economía circular.</b> Materiales reciclados y sostenibles, como el PET recuperado y las bolsas de maíz, que diferencian a Gonflé.</li>
-        <li><b>Temporadas.</b> Cajas de temporada, fin de año, Semana de la Salud y fechas límite de pedido.</li>
-        <li><b>Ideas por ocasión.</b> Qué necesita un lanzamiento, un evento o la bienvenida de un colaborador.</li>
-      </ul>
+    <div class="punto" style="margin-top:44px">
+      <div>
+        <h3 style="font-size:1.3rem;margin-bottom:12px">Primer mes: puesta a punto</h3>
+        <ul class="lista">
+          <li><b>Instagram y Facebook:</b> biografía, descripción, correo y enlace correctos, portada con el logo nuevo y publicaciones fijadas.</li>
+          <li><b>Perfil de Google:</b> enlace, categoría, atención por zona de servicio y solicitud de reseñas a clientes actuales.</li>
+          <li><b>LinkedIn:</b> página de empresa y perfil de la gerente.</li>
+          <li><b>Plantillas</b> con el logo y los colores oficiales, y calendario del primer mes para aprobación.</li>
+        </ul>
+      </div>
+      <div class="valor-unico">
+        <span>Valor único</span>
+        <strong>$150.000</strong>
+        <p>Se paga una sola vez, junto con el primer mes.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -330,10 +350,9 @@ section{scroll-margin-top:60px}
     <h2>Catálogo de WhatsApp Business</h2>
     <div class="wa-intro">
       <div>
-        <p class="lead">WhatsApp es el canal donde Gonflé cierra sus ventas. Con el catálogo, los clientes recorren las líneas, eligen un producto y escriben con la referencia exacta, sin salir del chat.</p>
-        <p>La selección es corta para recorrerla cómodamente en el celular y usa las mismas líneas de la presentación comercial. Cada producto enlaza a su ficha en el sitio web y el precio queda abierto, porque cada pedido se cotiza según cantidad y marcación.</p>
-        <div class="cifras" id="cifras"></div>
-        <p class="incl"><b>Incluido en el proyecto del sitio web.</b> La configuración del catálogo, los mensajes y las etiquetas no tiene costo adicional.</p>
+        <p class="lead">Los clientes recorren las líneas de Gonflé, eligen un producto y escriben con la referencia exacta, sin salir del chat.</p>
+        <p>Usa las mismas líneas y fotos de la presentación comercial. El precio queda abierto, porque cada pedido se cotiza según cantidad y marcación.</p>
+        <p class="incl"><b>Incluido en el proyecto del sitio web,</b> sin costo adicional.</p>
       </div>
       <div class="tel" aria-hidden="true">
         <div class="pant">
@@ -342,87 +361,39 @@ section{scroll-margin-top:60px}
             <div class="av"><img src="../assets/img/logo-gonfle.png" alt=""></div>
             <h3>Gonflé</h3>
             <small>Servicios de publicidad · Medellín</small>
-            <p>Inflables, impresos, merchandising, regalos corporativos y brunch para empresas.</p>
+            <p>Sentimos tu marca. Regalos corporativos, brunch, publicidad, eventos e inflables para empresas.</p>
           </div>
           <div class="cat">
             <div class="cat-h"><b>Catálogo</b><span>Ver todo</span></div>
-            <div class="cat-mini" id="mini"></div>
-            <div id="coles-tel"></div>
+            <div class="cat-mini"><img src="img/regalos.webp" alt=""><img src="img/inflables.webp" alt=""><img src="img/merch.webp" alt=""></div>
+            <div class="cole"><img src="img/regalos.webp" alt=""><div><b>Regalos corporativos</b><span>Cajas y kits</span></div></div>
+            <div class="cole"><img src="img/brunch.webp" alt=""><div><b>Brunch corporativo</b><span>Para eventos</span></div></div>
+            <div class="cole"><img src="img/inflables.webp" alt=""><div><b>Inflables y activaciones</b><span>A motor, golpeadores y sellados</span></div></div>
           </div>
         </div>
       </div>
     </div>
-
-    <h3 class="wa-sub">Productos propuestos</h3>
-    <p>Gonflé puede agregar o quitar productos antes de la carga.</p>
-    <div id="colecciones" style="margin-top:22px"></div>
-
-    <h3 class="wa-sub">Mensajes y orden de las conversaciones</h3>
-    <p>Mensajes automáticos, respuestas rápidas y etiquetas para que ningún cliente quede sin respuesta ni sin seguimiento.</p>
-    <div class="msj">
-      <div class="chat">
-        <small>Mensaje de bienvenida</small>
-        <div class="bur">¡Hola! Soy María Adelaida, de Gonflé. Cuéntame qué producto necesitas, cuántas unidades y para qué fecha, y te envío la cotización.</div>
-        <small>Mensaje de ausencia</small>
-        <div class="bur">Gracias por escribirnos. En este momento estamos fuera del horario de atención; te responderemos en cuanto volvamos. Mientras tanto, puedes ver nuestro catálogo aquí en WhatsApp.</div>
-        <p class="nota" style="margin:4px 0 0">El horario de atención se define con Gonflé.</p>
-      </div>
-      <div>
-        <h4>Respuestas rápidas</h4>
-        <table class="rapidas">
-          <tr><td>/catalogo</td><td>Te comparto nuestro catálogo para que veas las líneas y los productos.</td></tr>
-          <tr><td>/tiempos</td><td>Los inflables se producen entre 8 y 15 días hábiles. Para los demás productos, te confirmamos el tiempo en la cotización.</td></tr>
-          <tr><td>/anticipo</td><td>Para iniciar la producción se paga un anticipo del 50 %. Las condiciones de pago del saldo van en la cotización.</td></tr>
-          <tr><td>/arte</td><td>Envíanos tu logo en PDF, AI o PNG de buena calidad, y te mostramos cómo queda antes de producir.</td></tr>
-          <tr><td>/datos</td><td>Para facturar necesitamos razón social, NIT, dirección, correo y persona de contacto.</td></tr>
-        </table>
-        <h4 style="margin-top:28px">Etiquetas de seguimiento</h4>
-        <div class="etiquetas"><span>Nuevo</span><span>Cotizado</span><span>En seguimiento</span><span>Aprobado</span><span>En producción</span><span>Entregado</span></div>
-      </div>
+    <div class="lineas-wa">
+      <figure><img src="img/regalos.webp" alt="Caja de regalo corporativo con el logo de Gonflé" loading="lazy"><figcaption><b>Regalos corporativos</b>Cajas de temporada y kits empresariales</figcaption></figure>
+      <figure><img src="img/brunch.webp" alt="Brunch corporativo" loading="lazy"><figcaption><b>Brunch corporativo</b>Desayunos, refrigerios y estaciones</figcaption></figure>
+      <figure><img src="img/inflables.webp" alt="Inflables publicitarios con el logo de Gonflé" loading="lazy"><figcaption><b>Inflables y activaciones</b>Arcos, réplicas, golpeadores y sellados</figcaption></figure>
+      <figure><img src="img/merch.webp" alt="Merchandising con el logo de Gonflé" loading="lazy"><figcaption><b>Publicidad y merchandising</b>Termos, gorras, bolsas y vasos</figcaption></figure>
+      <figure><img src="img/impresos.webp" alt="Agendas, calendarios y afiches impresos" loading="lazy"><figcaption><b>Impresos y material POP</b>Litografía, gran formato y flexografía</figcaption></figure>
+      <figure><img src="img/especiales.webp" alt="Kit de bienestar con el logo de Gonflé" loading="lazy"><figcaption><b>Proyectos especiales</b>Semana de la Salud, fin de año y lanzamientos</figcaption></figure>
     </div>
-
-    <h3 class="wa-sub">Guía de carga</h3>
-    <p>Todo lo necesario para cargar el catálogo desde la aplicación WhatsApp Business del celular de la empresa.</p>
-    <div class="guia-pasos">
-      <div><b>1. Colecciones</b><p>En <code>Herramientas para la empresa → Catálogo</code>, crear las seis colecciones en el orden de la tabla.</p></div>
-      <div><b>2. Productos</b><p>Con <code>Agregar artículo</code>, subir la foto y copiar nombre, descripción, enlace y código de cada fila. El precio se deja vacío.</p></div>
-      <div><b>3. Mensajes y etiquetas</b><p>En <code>Herramientas para la empresa</code>, activar el mensaje de bienvenida, el de ausencia, las respuestas rápidas y las etiquetas.</p></div>
-    </div>
-    <div style="overflow-x:auto"><table class="carga" id="carga"></table></div>
-    <p class="nota">Los enlaces apuntan por ahora a la versión preliminar del sitio (davidmonacorrales1202-svg.github.io/gonfle). Cuando el sitio se publique en gonflegroup.com, se actualizan en el catálogo.</p>
-    <div class="descarga">
-      <p>El paquete contiene las 19 fotos en formato cuadrado (1080 × 1080, el que usa WhatsApp), numeradas en el orden de la tabla, y una hoja de cálculo con los mismos datos.</p>
-      <a class="btn" href="wa/Gonfle-catalogo-whatsapp.zip" download>Descargar fotos y hoja de carga</a>
-    </div>
+    <ul class="wa-incluye">
+      <li><b>Catálogo</b>Productos estrella de cada línea</li>
+      <li><b>Mensaje de bienvenida</b>Pide producto, cantidad y fecha</li>
+      <li><b>Respuestas rápidas</b>Tiempos, anticipo, arte y datos</li>
+      <li><b>Etiquetas</b>Seguimiento de cada cotización</li>
+    </ul>
   </div>
 </section>
 
-<section id="puesta">
+<section id="inversion">
   <div class="wrap">
-    <h2>Puesta a punto</h2>
-    <p class="lead">Se realiza una sola vez, durante el primer mes, y deja todos los canales con información correcta y una imagen coherente con el nuevo logo.</p>
-    <div class="punto">
-      <ul class="lista">
-        <li><b>Instagram:</b> nueva biografía con las líneas actuales, enlace al sitio web, historias destacadas reorganizadas y tres publicaciones fijadas: qué hace Gonflé, cómo cotizar y un trabajo reciente.</li>
-        <li><b>Facebook:</b> descripción, correo, enlace, portada y foto de perfil actualizados.</li>
-        <li><b>Perfil de Google:</b> corrección de enlace y categoría, atención por zona de servicio en lugar de dirección física, fotos y solicitud de reseñas a clientes actuales.</li>
-        <li><b>LinkedIn:</b> creación o recuperación de la página de empresa y ajuste del perfil de la gerente: titular, extracto y portada.</li>
-        <li><b>Plantillas de diseño</b> con el logo y los colores oficiales para publicaciones, historias y portadas de video.</li>
-        <li><b>Calendario del primer mes</b> para aprobación de Gonflé.</li>
-      </ul>
-      <div class="valor-unico">
-        <span>Valor único</span>
-        <strong>$150.000</strong>
-        <p>Complementa la configuración de WhatsApp Business y la actualización de Instagram ya incluidas en el proyecto del sitio web.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="planes">
-  <div class="wrap">
-    <h2>Planes de gestión mensual</h2>
-    <p class="lead">Tres opciones según el volumen de contenido y los canales que se quieran gestionar. Se puede subir o bajar de plan al terminar cada mes.</p>
+    <h2>Inversión mensual</h2>
+    <p class="lead">Tres planes según el volumen de contenido. Se puede cambiar de plan al terminar cada mes.</p>
     <p class="desliza">Desliza la tabla hacia la izquierda para ver los tres planes →</p>
     <div class="tabla-scroll">
       <table class="planes">
@@ -436,113 +407,41 @@ section{scroll-margin-top:60px}
         </thead>
         <tbody>
           <tr><th>Canales</th><td class="si">Instagram y Facebook</td><td class="si dest">Instagram, Facebook y LinkedIn</td><td class="si">Instagram, Facebook y LinkedIn</td></tr>
-          <tr><th>Publicaciones en Instagram y Facebook</th><td class="si">8 al mes, 2 de ellas en video</td><td class="si dest">12 al mes, 4 de ellas en video</td><td class="si">16 al mes, 6 de ellas en video</td></tr>
-          <tr><th>Historias</th><td class="si">8 al mes</td><td class="si dest">12 al mes</td><td class="si">16 al mes</td></tr>
-          <tr><th>Estados de WhatsApp</th><td class="si">Una vez por semana</td><td class="si dest">Dos veces por semana</td><td class="si">Dos veces por semana</td></tr>
-          <tr><th>LinkedIn</th><td class="nada">No incluido</td><td class="si dest">4 publicaciones en la página de empresa y 4 textos para el perfil de la gerente</td><td class="si">8 publicaciones en la página de empresa y 4 textos para el perfil de la gerente</td></tr>
-          <tr><th>Mensaje mensual para listas de difusión de WhatsApp</th><td class="nada">No incluido</td><td class="si dest">Incluido</td><td class="si">Incluido</td></tr>
-          <tr><th>Respuesta a comentarios y mensajes</th><td class="nada">No incluido</td><td class="si dest">En días hábiles, remitiendo las cotizaciones al WhatsApp de Gonflé</td><td class="si">En días hábiles, remitiendo las cotizaciones al WhatsApp de Gonflé</td></tr>
-          <tr><th>Sesión de fotos y video en Gonflé</th><td class="nada">No incluido</td><td class="nada dest">No incluido</td><td class="si">Una visita mensual de dos horas en Medellín</td></tr>
-          <tr><th>Gestión de pauta en Meta</th><td class="nada">No incluido</td><td class="nada dest">No incluido</td><td class="si">Configuración y seguimiento de campañas. El presupuesto de pauta se paga aparte, directamente a la plataforma.</td></tr>
-          <tr><th>Calendario mensual para aprobación</th><td class="si">Incluido</td><td class="si dest">Incluido</td><td class="si">Incluido</td></tr>
-          <tr><th>Informe</th><td class="si">Mensual, con las cifras principales</td><td class="si dest">Mensual, con cifras y recomendaciones</td><td class="si">Mensual, con cifras, recomendaciones y una reunión de 30 minutos</td></tr>
+          <tr><th>Publicaciones al mes</th><td class="si">8, 2 en video</td><td class="si dest">12, 4 en video</td><td class="si">16, 6 en video</td></tr>
+          <tr><th>Historias al mes</th><td class="si">8</td><td class="si dest">12</td><td class="si">16</td></tr>
+          <tr><th>Estados de WhatsApp</th><td class="si">1 por semana</td><td class="si dest">2 por semana</td><td class="si">2 por semana</td></tr>
+          <tr><th>LinkedIn</th><td class="nada">No incluido</td><td class="si dest">4 publicaciones y 4 textos para la gerente</td><td class="si">8 publicaciones y 4 textos para la gerente</td></tr>
+          <tr><th>Respuesta a comentarios y mensajes</th><td class="nada">No incluido</td><td class="si dest">En días hábiles</td><td class="si">En días hábiles</td></tr>
+          <tr><th>Sesión de fotos y video</th><td class="nada">No incluido</td><td class="nada dest">No incluido</td><td class="si">1 visita mensual de 2 horas</td></tr>
+          <tr><th>Pauta en Meta</th><td class="nada">No incluido</td><td class="nada dest">No incluido</td><td class="si">Gestión de campañas (el presupuesto se paga aparte)</td></tr>
+          <tr><th>Informe mensual</th><td class="si">Cifras principales</td><td class="si dest">Cifras y recomendaciones</td><td class="si">Cifras, recomendaciones y reunión</td></tr>
         </tbody>
       </table>
     </div>
     <p class="nota">No se cobra IVA: el prestador del servicio no es responsable de este impuesto.</p>
-  </div>
-</section>
-
-<section id="noventa">
-  <div class="wrap">
-    <h2>Los primeros 90 días</h2>
-    <p class="lead">Un plazo prudente para pasar de cuentas inactivas a un ritmo constante y tener las primeras cifras para decidir.</p>
-    <table class="meses">
-      <tr><td>Mes 1</td><td>Puesta a punto de todos los canales, plantillas, primer calendario y primeras publicaciones de trabajos recientes.</td></tr>
-      <tr><td>Mes 2</td><td>Ritmo constante de publicación, activación de LinkedIn y primeros mensajes a las listas de difusión.</td></tr>
-      <tr><td>Mes 3</td><td>Revisión con datos: qué contenido genera más conversaciones en WhatsApp y qué ajustar. Decisión sobre pauta y plan.</td></tr>
-    </table>
-  </div>
-</section>
-
-<section id="condiciones">
-  <div class="wrap">
-    <h2>Condiciones</h2>
-    <div class="dos">
+    <div class="inicio">
       <div>
-        <h3>Del servicio</h3>
+        <h3>Para iniciar</h3>
+        <ol>
+          <li>Elegir el plan.</li>
+          <li>Pagar la puesta a punto y el primer mes. Con el plan recomendado: <b>$150.000 + $590.000 = $740.000</b>.</li>
+          <li>Compartir los accesos a las cuentas y fotos de trabajos recientes.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Condiciones</h3>
         <ul class="lista">
-          <li>Pago mensual anticipado. La puesta a punto se paga junto con el primer mes.</li>
-          <li>Permanencia mínima sugerida de tres meses, el tiempo necesario para ver resultados.</li>
-          <li>Las cuentas y los contenidos son propiedad de Gonflé S.A.S.</li>
+          <li>Pago mensual anticipado y permanencia sugerida de tres meses.</li>
+          <li>Las cuentas y los contenidos son de Gonflé S.A.S.</li>
+          <li>Gonflé aporta fotos de cada pedido entregado y aprueba el calendario en dos días hábiles.</li>
           <li>No se compran seguidores ni interacciones.</li>
-          <li>Las cotizaciones, precios y negociaciones las atiende Gonflé.</li>
-          <li>La propuesta no garantiza un número de ventas: mide y mejora la presencia y las conversaciones que se generan.</li>
         </ul>
-      </div>
-      <div>
-        <h3>Lo que aporta Gonflé</h3>
-        <ul class="lista">
-          <li>Accesos a Instagram, Facebook, el Perfil de Google y LinkedIn.</li>
-          <li>Tres fotos y un video corto, con el celular y buena luz, de cada pedido antes de despacharlo.</li>
-          <li>Autorización de los clientes para mostrar sus trabajos.</li>
-          <li>Aprobación del calendario en un máximo de dos días hábiles.</li>
-          <li>Información sobre materiales, procesos y temporadas.</li>
-        </ul>
-        <p class="nota">Las imágenes generadas con inteligencia artificial se usan solo como complemento y no reemplazan las fotos de trabajos reales.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cierre">
-  <div class="wrap">
-    <h2>Para iniciar</h2>
-    <p class="lead">Con la elección del plan, el servicio puede comenzar en la semana siguiente.</p>
-    <ol>
-      <li><b>Elegir el plan</b> que mejor se ajuste al momento de la empresa.</li>
-      <li><b>Pagar la puesta a punto y el primer mes.</b> Con el plan recomendado: $150.000 + $590.000 = $740.000.</li>
-      <li><b>Compartir los accesos</b> a las cuentas y las fotos de los trabajos más recientes.</li>
-    </ol>
-  </div>
-</section>
+<footer><div class="wrap"><img src="../assets/img/logo-gonfle.png" alt="Gonflé"><span>Propuesta presentada por David Moná Corrales a Gonflé S.A.S. · Vigente hasta el 22 de noviembre de 2026</span></div></footer>
 
-<footer><div class="wrap"><img src="../assets/img/logo-gonfle.png" alt="Gonflé"><span>Propuesta presentada por David Moná Corrales a Gonflé S.A.S. · Vigente hasta el 13 de noviembre de 2026</span></div></footer>
-
-<script src="wa/productos.js?v=1"></script>
-<script>
-const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const cols = [...new Set(PRODUCTOS.map((p) => p.coleccion))];
-const de = (c) => PRODUCTOS.filter((p) => p.coleccion === c);
-const img = (p) => `wa/img/${p.foto}.webp`;
-const cant = (n, s, p) => `${n} ${n === 1 ? s : p}`;
-document.getElementById("cifras").innerHTML =
-  `<div><b>${PRODUCTOS.length}</b><span>productos</span></div><div><b>${cols.length}</b><span>colecciones</span></div><div><b>1</b><span>clic para cotizar</span></div>`;
-document.getElementById("mini").innerHTML = ["Cajas de temporada", "Golpeadores en válvula", "Plastilonas y banderines"]
-  .map((n) => PRODUCTOS.find((p) => p.nombre === n)).filter(Boolean).map((p) => `<img src="${img(p)}" alt="">`).join("");
-document.getElementById("coles-tel").innerHTML = cols.map((c) =>
-  `<div class="cole"><img src="${img(de(c)[0])}" alt=""><div><b>${esc(c)}</b><span>${cant(de(c).length, "artículo", "artículos")}</span></div></div>`).join("");
-const bloque = (c, extra = "") => `
-  <div class="coleccion ${de(c).length === 1 ? "una" : ""} ${extra}">
-    <h4>${esc(c)}<small>${cant(de(c).length, "producto", "productos")}</small></h4>
-    <div class="prods">${de(c).map((p) => `
-      <div class="prod"><img src="${img(p)}" alt="${esc(p.nombre)}" loading="lazy">
-        <div><h5>${esc(p.nombre)}</h5><p>${esc(p.descripcion)}</p><div class="cod">Código ${p.codigo}</div></div>
-      </div>`).join("")}
-    </div>
-  </div>`;
-// Las colecciones de un solo producto se muestran en pareja, o a lo ancho si quedan solas
-let html = "";
-for (let i = 0; i < cols.length; i++) {
-  const c = cols[i], sig = cols[i + 1];
-  if (de(c).length === 1 && sig && de(sig).length === 1) { html += `<div class="par">${bloque(c)}${bloque(sig)}</div>`; i++; }
-  else html += bloque(c, de(c).length === 1 ? "sola" : "");
-}
-document.getElementById("colecciones").innerHTML = html;
-document.getElementById("carga").innerHTML =
-  `<thead><tr><th>Foto</th><th>Código</th><th>Colección</th><th>Nombre</th><th>Descripción</th><th>Enlace</th></tr></thead><tbody>` +
-  PRODUCTOS.map((p) => `<tr><td class="f"><img src="${img(p)}" alt="" loading="lazy"></td><td class="c">${p.codigo}</td><td class="col">${esc(p.coleccion)}</td><td class="n">${esc(p.nombre)}</td><td>${esc(p.descripcion)}</td><td class="e"><a href="${p.enlace}" target="_blank" rel="noopener">${esc(p.enlace.split("#")[1])}</a></td></tr>`).join("") +
-  `</tbody>`;
-</script>
 </body>
 </html>
