@@ -268,6 +268,38 @@ section{scroll-margin-top:60px}
 .inicio li{margin-bottom:8px}
 @media (max-width:860px){.lineas-wa{grid-template-columns:1fr 1fr}.wa-incluye{grid-template-columns:1fr 1fr;row-gap:14px}.wa-incluye li:nth-child(3){padding-left:0;border-left:0}.inicio{grid-template-columns:1fr;gap:28px}}
 @media (max-width:640px){.lineas-wa{gap:16px 12px}.lineas-wa figcaption{font-size:.85rem}}
+
+/* Vista del feed */
+.aparte{display:block;margin-top:4px;color:var(--rojo);font-weight:600}
+.ig-wrap{display:grid;grid-template-columns:minmax(0,430px) 1fr;gap:56px;align-items:start;margin-top:32px}
+.ig{border:1px solid var(--linea);border-radius:28px;padding:18px 14px 14px;background:#fff;box-shadow:0 18px 40px rgba(30,22,48,.08)}
+.ig-cab{display:flex;align-items:center;gap:18px;padding:0 6px}
+.ig-av{width:78px;height:78px;border-radius:50%;padding:3px;background:linear-gradient(45deg,var(--amarillo),var(--rojo));flex:none}
+.ig-av img{width:100%;height:100%;border-radius:50%;background:#fff;object-fit:contain;padding:12px}
+.ig-num{display:flex;flex:1;justify-content:space-around;text-align:center;font-size:.78rem;color:var(--texto)}
+.ig-num b{display:block;font-size:1rem;color:var(--tinta)}
+.ig-bio{padding:12px 6px 0;font-size:.82rem;line-height:1.45;color:var(--tinta)}
+.ig-bio b{display:block}
+.ig-cat{display:block;color:var(--suave)}
+.ig-bio a{color:#1D4ED8;font-weight:600}
+.ig-dest{display:flex;gap:12px;padding:16px 6px 14px;overflow:hidden}
+.ig-dest div{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:.7rem;color:var(--tinta)}
+.ig-dest i{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:1.1rem;border:2px solid #fff;box-shadow:0 0 0 1px var(--linea)}
+.ig-dest .r{background:var(--rojo);color:#fff}.ig-dest .a{background:var(--amarillo);color:var(--tinta)}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.ig-grid .p{position:relative;aspect-ratio:4/5;overflow:hidden;background:#eee}
+.ig-grid .p img{width:100%;height:100%;object-fit:cover;display:block}
+.ig-grid .p em{position:absolute;left:0;right:0;bottom:0;padding:18px 7px 6px;font-style:normal;font-weight:700;font-size:.66rem;line-height:1.2;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.ig-grid .texto{display:flex;flex-direction:column;justify-content:center;padding:10px;text-align:left}
+.ig-grid .texto img{width:58%;height:auto;object-fit:contain;margin-bottom:8px}
+.ig-grid .texto b{font-size:.86rem;line-height:1.1;font-weight:800;margin-bottom:6px}
+.ig-grid .texto span{font-size:.6rem;line-height:1.35}
+.ig-grid .rojo{background:var(--rojo);color:#fff}
+.ig-grid .amarillo{background:var(--amarillo);color:var(--tinta)}
+.ig-grid .fij::before{content:"";position:absolute;top:6px;right:6px;width:14px;height:14px;z-index:2;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M16 3l5 5-3 1-4 4 1 5-2 2-4-4-5 5-1-1 5-5-4-4 2-2 5 1 4-4z'/%3E%3C/svg%3E");filter:drop-shadow(0 0 2px rgba(0,0,0,.6))}
+.ig-grid .reel::after{content:"";position:absolute;top:6px;left:6px;width:15px;height:15px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Crect x='2' y='3' width='20' height='18' rx='5' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='M10 9l5 3-5 3z'/%3E%3C/svg%3E");filter:drop-shadow(0 0 2px rgba(0,0,0,.6))}
+.ig-plan h3{font-size:1.3rem;margin-bottom:12px}
+@media (max-width:860px){.ig-wrap{grid-template-columns:1fr;gap:36px}.ig{max-width:430px;margin:0 auto;width:100%}}
 </style>
 </head>
 <body>
@@ -288,7 +320,7 @@ section{scroll-margin-top:60px}
 
 <nav class="indice" aria-label="Contenido de la propuesta">
   <div class="wrap">
-    <a href="#diagnostico">Diagnóstico</a><a href="#propuesta">Propuesta</a><a href="#whatsapp">Catálogo de WhatsApp</a><a href="#inversion">Inversión</a>
+    <a href="#diagnostico">Diagnóstico</a><a href="#propuesta">Propuesta</a><a href="#feed">Así se vería</a><a href="#whatsapp">Catálogo de WhatsApp</a><a href="#inversion">Inversión</a>
   </div>
 </nav>
 
@@ -336,6 +368,55 @@ section{scroll-margin-top:60px}
           <li><b>LinkedIn:</b> página de empresa y perfil de la gerente.</li>
           <li><b>Plantillas</b> con el logo y los colores oficiales, y calendario del primer mes para aprobación.</li>
         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="feed">
+  <div class="wrap">
+    <h2>Así se vería su Instagram</h2>
+    <p class="lead">Ejemplo del primer mes: 12 publicaciones, 2 de ellas en video, con el logo y los colores oficiales. Las tres primeras quedan fijadas arriba.</p>
+    <div class="ig-wrap">
+      <div class="ig">
+        <div class="ig-cab">
+          <div class="ig-av"><img src="../assets/img/logo-gonfle.png" alt=""></div>
+          <div class="ig-num"><div><b>419</b>publicaciones</div><div><b>1.374</b>seguidores</div><div><b>800</b>seguidos</div></div>
+        </div>
+        <div class="ig-bio">
+          <b>Gonflé</b>
+          <span class="ig-cat">Agencia de publicidad</span>
+          Sentimos tu marca. Regalos corporativos, brunch, publicidad, eventos e inflables para empresas.<br>
+          Medellín · Cotiza por WhatsApp<br>
+          <a>gonflegroup.com</a>
+        </div>
+        <div class="ig-dest">
+          <div><i class="r">R</i>Regalos</div><div><i class="a">B</i>Brunch</div><div><i class="r">I</i>Inflables</div><div><i class="a">P</i>Impresos</div><div><i class="r">T</i>Trabajos</div>
+        </div>
+        <div class="ig-grid">
+          <div class="p texto rojo fij"><img src="../assets/img/logo-gonfle-blanco.png" alt=""><b>¿Qué hacemos?</b><span>Regalos · Brunch · Publicidad · Inflables</span></div>
+          <div class="p texto amarillo fij"><b>Cotiza en 3 pasos</b><span>1. Nos cuentas tu idea<br>2. Te enviamos la propuesta<br>3. Producimos y entregamos</span></div>
+          <div class="p fij reel"><img src="img/feed/reel-arco.webp" alt=""><em>Así se infla un arco</em></div>
+          <div class="p"><img src="img/feed/cierre.webp" alt=""><em>Reserva tu cierre de año</em></div>
+          <div class="p"><img src="img/feed/cajas.webp" alt=""><em>Cajas de temporada</em></div>
+          <div class="p"><img src="img/feed/estadio.webp" alt=""><em>Tu marca en el estadio</em></div>
+          <div class="p"><img src="img/feed/brunch.webp" alt=""><em>Brunch para tu evento</em></div>
+          <div class="p reel"><img src="img/feed/reel-activacion.webp" alt=""><em>Una activación en 15 segundos</em></div>
+          <div class="p"><img src="img/feed/circular.webp" alt=""><em>Economía circular</em></div>
+          <div class="p"><img src="img/feed/merch.webp" alt=""><em>Kits con tu logo</em></div>
+          <div class="p"><img src="img/feed/litografia.webp" alt=""><em>Agendas y calendarios 2027</em></div>
+          <div class="p"><img src="img/feed/bienestar.webp" alt=""><em>Semana de la Salud</em></div>
+        </div>
+      </div>
+      <div class="ig-plan">
+        <h3>Plan del primer mes</h3>
+        <ul class="lista">
+          <li><b>Semana 1:</b> perfil nuevo y las tres publicaciones fijadas: qué hacemos, cómo cotizar y un video de un inflable.</li>
+          <li><b>Semana 2:</b> cierre de año: reserva de fechas, cajas de temporada y activaciones en eventos.</li>
+          <li><b>Semana 3:</b> brunch corporativo, un video de una activación y economía circular.</li>
+          <li><b>Semana 4:</b> kits con logo, impresos para 2027 y bienestar empresarial.</li>
+        </ul>
+        <p class="nota">Ejemplo con imágenes ilustrativas. A medida que Gonflé entregue pedidos, se reemplazan por fotos y videos de trabajos reales.</p>
       </div>
     </div>
   </div>
@@ -394,19 +475,20 @@ section{scroll-margin-top:60px}
         <h3 style="font-size:1.3rem;margin-bottom:12px">Qué incluye cada mes</h3>
         <ul class="lista">
           <li><b>Canales:</b> Instagram, Facebook y LinkedIn.</li>
-          <li><b>12 publicaciones</b> en Instagram y Facebook, 4 de ellas en video, y <b>12 historias</b>.</li>
+          <li><b>12 publicaciones</b> en Instagram y Facebook, 2 de ellas en video, y <b>12 historias</b>.</li>
           <li><b>Estados de WhatsApp</b> dos veces por semana.</li>
           <li><b>LinkedIn:</b> 4 publicaciones en la página de empresa y 4 textos para el perfil de la gerente.</li>
-          <li><b>1 campaña en Meta</b> (Instagram y Facebook) para atraer clientes y llevarlos al WhatsApp de Gonflé.</li>
+          <li><b>1 campaña en Meta</b> (Instagram y Facebook) para atraer clientes y llevarlos al WhatsApp de Gonflé: configuración, anuncios y seguimiento. <span class="aparte">La pauta se paga aparte, directamente a Meta: presupuesto sugerido de unos $600.000 al mes.</span></li>
           <li><b>Respuesta a comentarios y mensajes</b> en días hábiles.</li>
           <li><b>Informe mensual</b> con cifras y recomendaciones.</li>
           <li><b>Primer mes:</b> la puesta a punto de todos los canales, sin costo adicional.</li>
         </ul>
-        <p class="nota">El presupuesto de la pauta en Meta lo define Gonflé y se paga directamente a la plataforma. No se cobra IVA: el prestador del servicio no es responsable de este impuesto.</p>
+        <p class="nota">Los $500.000 cubren la gestión. El presupuesto de la pauta lo define Gonflé, se paga con su tarjeta directamente a Meta y puede ajustarse cada mes según los resultados. No se cobra IVA: el prestador del servicio no es responsable de este impuesto.</p>
       </div>
       <div class="valor-unico">
         <span>Plan mensual</span>
         <strong>$500.000</strong>
+        <p style="margin-bottom:12px"><b>+ Pauta en Meta, pagada aparte:</b> unos $600.000 al mes, según lo que Gonflé defina.</p>
         <p>Para iniciar: aprobar la propuesta, pagar el primer mes y compartir los accesos a las cuentas y fotos de trabajos recientes.</p>
       </div>
     </div>
